@@ -1,1 +1,45 @@
 /* shared styles, layout, typography, buttons, colours */
+
+
+/* navbar begin */
+.nav-container {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+}
+
+.logo {
+    margin-right: auto;
+    color: bisque;
+}
+
+nav > a {  
+    color: bisque;
+    text-align: center;
+    padding: 1rem 1.3rem;
+    text-decoration: none;    
+}
+/* navbar end */
+
+
+/* footer begin */
+.footer-container {
+    left: 0;
+    bottom: 0;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: black;
+}
+
+.footer-container > p {
+    color: bisque;
+}
+/* footer end */
