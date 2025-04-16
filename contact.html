@@ -23,6 +23,23 @@
         </div>
     </header>
 
+    <!-- contact -->
+    <section class="contact">
+        <div class="container">
+            <form id="contact-form">
+                <label for="fullname">Name</label>
+                <input type="text" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" required> 
+
+                <label for="subject">Message</label>
+                <textarea name="message"></textarea>
+
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </section>
 
     <!-- footer -->
     <footer>
@@ -31,6 +48,8 @@
         </div>
     </footer>
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="js/form.js" defer></script>
     <script src="js/main.js" defer></script>
 </body>
 </html>

@@ -24,6 +24,16 @@ nav > a {
     text-align: center;
     padding: 1rem 1.3rem;
     text-decoration: none;    
+    transition: all .3s ease-in-out;
+}
+
+nav > a:hover {
+    background-color: peachpuff;
+}
+
+.active {
+    background-color: peachpuff;
+    color: black;
 }
 /* navbar end */
 
