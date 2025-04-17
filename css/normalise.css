@@ -7,11 +7,6 @@ body {
 }
 
 :root {
-  /* spacing */
-  --space-responsive-s: clamp(12px, 2vw, 24px);
-  --space-responsive-m: clamp(16px, 2.5vw, 32px);
-  --space-responsive-l: clamp(20px, 3vw, 40px);
-
   /* colours */
   --main-text-black: #1A090D;
   --main-white: #F4F3F2;
