@@ -1,5 +1,9 @@
 /* shared styles, layout, typography, buttons, colours */
 
+/* body */
+body {
+    background-color: #F4F3F2;
+}
 
 /* navbar begin */
 .nav-container {
@@ -16,26 +20,46 @@
 
 .logo {
     margin-right: auto;
-    color: bisque;
+    color: #F4F3F2;
 }
 
 nav > a {  
-    color: bisque;
+    color: #F4F3F2;
     text-align: center;
-    padding: 1rem 1.3rem;
-    text-decoration: none;    
+    padding: 1rem 2.5rem;
+    text-decoration: none; 
+    border-radius: 11rem;   
     transition: all .3s ease-in-out;
+    margin: 5rem;
 }
 
 nav > a:hover {
-    background-color: peachpuff;
+    background-color: #F4F3F2;
 }
 
 .active {
-    background-color: peachpuff;
+    background-color: #F4F3F2;
     color: black;
 }
 /* navbar end */
+
+/* buttons begin */
+.primary-button {
+    font-size: .8rem;
+    font-size: 1.2vw;
+    text-decoration: none;
+    color: var(--main-white);
+    background-color: #D64550;
+    padding: 0.833vw 3.75vw;
+    transition: all .1s ease-in-out;
+    border-radius: .5vw;
+}
+
+.primary-button:hover {
+    background-color: var(--main-text-black);
+    color: var(--main-white);
+}
+/* buttons end */
 
 
 /* footer begin */
