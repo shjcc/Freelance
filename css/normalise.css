@@ -10,4 +10,5 @@ body {
   /* colours */
   --main-text-black: #1A090D;
   --main-white: #F4F3F2;
+  --main-red: rgb(214, 69, 80);
 }
