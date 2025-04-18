@@ -1,14 +1,16 @@
 /* default browser styles to help with consistency */
 body {
-    margin: 0;
-    padding: 0;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  background-color: var(--main-white);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 :root {
   /* colours */
-  --main-text-black: #1A090D;
-  --main-white: #F4F3F2;
+  --main-black: rgb(26, 9, 13);
+  --main-white: rgb(244, 243, 242);
   --main-red: rgb(214, 69, 80);
+  --main-soft-black: rgba(26, 9, 13, 0.773);
 }
