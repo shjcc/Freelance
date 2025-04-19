@@ -3,16 +3,16 @@
 .hero {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; 
-    align-items: flex-start;
+    justify-content: flex-end; 
+    align-items:center;
     min-height: 50vh;
     padding: clamp(1rem, 4vw, 2rem);
-    margin-top: -1vw;
+    margin-top: 1vw;
 }
 
 .hero .container {
     padding: 2rem;
-    background: rgb(214, 69, 80, 0.1);
+    background: var();
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(168, 76, 76, 0.3);
     backdrop-filter: blur(5px);
@@ -37,7 +37,7 @@
 .hero-description {
     font-size: 1rem ;
     font-size: 2vw; 
-    color: var(--main-soft-black);
+    color: var();
     width: 50vw;
     margin-bottom: 72px; 
     line-height: 2.6vw;
@@ -46,7 +46,7 @@
 /* hero end */
 
 /* services start */
-.container {
+.services > .container {
     padding: 4rem 4rem 2rem 4rem;
 }
 
@@ -63,7 +63,7 @@
 
 .services > .container > h3 {
     font-size: 2vw;
-    color: var(--main-black);
+    color: var();
     text-align: center;
 }
 
@@ -72,7 +72,7 @@
     margin-bottom: 32px; 
 }
 .service-item > p {
-    color: var(--main-soft-black);
+    color: var(-soft-black);
 }
 /* services end */
 
@@ -111,8 +111,8 @@
 
 /* call to action start */
 .call-to-action {
-    background-color: var(--main-red);
-    color: var(--main-white);
+    background-color: var();
+    color: var();
     margin-top: 4rem;
     padding: 4rem;
 }
@@ -131,7 +131,7 @@
 .cta-description {
     font-size: 1rem ;
     font-size: 2vw; 
-    color: var(--main-white);
+    color: var();
     text-align: left;
     margin-bottom: 72px; 
     line-height: 2.6vw;

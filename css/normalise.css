@@ -1,6 +1,6 @@
 /* default browser styles to help with consistency */
 body {
-  background-color: var(--main-white);
+  background-color: var(--main-platinum);
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
@@ -8,9 +8,14 @@ body {
 }
 
 :root {
-  /* colours */
+  /* colour palette */
   --main-black: rgb(26, 9, 13);
+  --main-black-light: rgba(26, 9, 13, 0.6);
   --main-white: rgb(244, 243, 242);
   --main-red: rgb(214, 69, 80);
-  --main-soft-black: rgba(26, 9, 13, 0.773);
+  --main-platinum: rgb(238, 226, 223);
+  --main-thistle: rgb(222, 193, 219);
+  --main-blue-dark: rgb(91, 97, 178);
+  --main-blue-medium: rgb(47, 128, 228);
+  --main-blue-light: rgb(109, 160, 225);
 }

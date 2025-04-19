@@ -10,7 +10,7 @@
 
 .logo {
     font-size: 3vw;
-    color: var(--main-black);
+    color: var(--main-blue-dark);
     font-weight: bold;
 }
 
@@ -20,11 +20,15 @@
     transform: translateX(-50%);
     display: flex;
     gap: 1rem;
-    background-color: seashell;
-    border: 2px solid var(--main-black);
+    background-color: var(--main-white);
     padding: 0.5em 1rem; 
     border-radius: 3vw;
     z-index: 1; 
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.nav-right {
+    border: 1px solid rgba(0, 0, 0, 0.03);
 }
 
 .nav-right {
@@ -35,7 +39,7 @@
 .nav-center a,
 .nav-right a {
     position: relative;
-    color: var(--main-black);
+    color: var(--main-black-light);
     text-decoration: none;
     padding: 1rem 1.5rem;
     border-radius: 1rem;
@@ -45,13 +49,13 @@
     transition: color 0.3s ease-in-out;
     display: inline-block;
     overflow: hidden;
+
 }
 
 .nav-right a {
-    color: var(--main-white);
-    background-color: rgb(214, 69, 80, 1);
+    color: var(--main-platinum);
+    background-color: var(--main-blue-dark);
     transition: background-color 0.3s ease-in-out;
-    border: 2px solid var(--main-black);
 }
 
 .nav-center a::after {
@@ -62,19 +66,22 @@
     transform: translateX(-50%);
     width: 0%;
     height: 2px;
-    background-color: var(--main-black);
+    background-color: var(--main-blue-medium);
     transition: width 0.2s ease-in-out;
 }
 
-.nav-center a:hover::after {
+.nav-center a:hover::after, .nav-center a.active::after  {
     width: 80%;
 }
-
-.nav-right a:hover {
-    background-color: var(--main-white);
-    color: var(--main-black);
-    transition: all 0.3s ease-in-out;
+.nav-center a:hover, .nav-center a.active {
+    color: var(--main-blue-medium);
 }
+
+.nav-right a:hover  {
+    background-color: var(--main-blue-light);
+    transition: background-color 0.3s ease-in-out;
+}
+
 /* navbar end */
 
 /* buttons begin */
@@ -83,7 +90,7 @@
     font-size: .8rem;
     font-size: 1.2vw;
     text-decoration: none;
-    color: var(--main-white);
+    color: var();
     background-color: #D64550;
     padding: 0.833vw 3.75vw;
     transition: all .1s ease-in-out;
@@ -91,8 +98,8 @@
 }
 
 .primary-button:hover {
-    background-color: var(--main-black);
-    color: var(--main-white);
+    background-color: var();
+    color: var();
 }
 
 /* black then hover white */
@@ -100,8 +107,8 @@
     font-size: .8rem;
     font-size: 1.2vw;
     text-decoration: none;
-    color: var(--main-white);
-    background-color: var(--main-black);
+    color: var();
+    background-color: var();
     padding: 0.833vw 3.75vw;
     transition: all .1s ease-in-out;
     border-radius: .5vw;
@@ -109,26 +116,37 @@
 }
 
 .primary-off-button:hover {
-    background-color: var(--main-white);
-    color: var(--main-black);
-    border: 2px solid var(--main-soft-black)
+    background-color: var();
+    color: var();
+    border: 2px solid var()
 }
 /* buttons end */
 
 
 /* footer begin */
 .footer-container {
-    left: 0;
-    bottom: 0;
-    max-width: 100%;
+    width: 100%;
+    background-color: #0d0d0d;
+    padding: 30px 20px;
     display: flex;
     justify-content: center;
-    align-items: center; 
-    background-color: black;
+    align-items: center;
+    text-align: center;
+    border-top: 1px solid #333;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.footer-container > p {
-    color: bisque;
+.footer-container p {
+    color: #ccc;
+    font-size: 0.95rem;
+    font-weight: 400;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+.footer-container span {
+    color: #f5deb3; 
+    font-weight: 500;
 }
 /* footer end */
 
