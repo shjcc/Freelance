@@ -81,7 +81,6 @@
     background-color: var(--main-blue-light);
     transition: background-color 0.3s ease-in-out;
 }
-
 /* navbar end */
 
 /* buttons begin */
@@ -90,16 +89,17 @@
     font-size: .8rem;
     font-size: 1.2vw;
     text-decoration: none;
-    color: var();
-    background-color: #D64550;
+    color: var(--main-white);
+    background-color: var(--main-blue-medium);
     padding: 0.833vw 3.75vw;
-    transition: all .1s ease-in-out;
+    transition: background-color, color .2s ease-in-out;
     border-radius: .5vw;
 }
 
 .primary-button:hover {
-    background-color: var();
-    color: var();
+    background-color: var(--main-blue-light);
+    color: var(--main-black-light);
+    transition: background-color, color .2s ease-in-out;
 }
 
 /* black then hover white */
