@@ -47,6 +47,13 @@
     overflow: hidden;
 }
 
+.nav-right a {
+    color: var(--main-white);
+    background-color: rgb(214, 69, 80, 1);
+    transition: background-color 0.3s ease-in-out;
+    border: 2px solid var(--main-black);
+}
+
 .nav-center a::after {
     content: "";
     position: absolute;
@@ -63,13 +70,15 @@
     width: 80%;
 }
 
-.nav-right a {
-    color: var(--main-white);
-    background-color: rgb(214, 69, 80, 1);
+.nav-right a:hover {
+    background-color: var(--main-white);
+    color: var(--main-black);
+    transition: all 0.3s ease-in-out;
 }
 /* navbar end */
 
 /* buttons begin */
+/* red then hover black */
 .primary-button {
     font-size: .8rem;
     font-size: 1.2vw;
@@ -84,6 +93,25 @@
 .primary-button:hover {
     background-color: var(--main-black);
     color: var(--main-white);
+}
+
+/* black then hover white */
+.primary-off-button {
+    font-size: .8rem;
+    font-size: 1.2vw;
+    text-decoration: none;
+    color: var(--main-white);
+    background-color: var(--main-black);
+    padding: 0.833vw 3.75vw;
+    transition: all .1s ease-in-out;
+    border-radius: .5vw;
+    border: 2px solid pink;
+}
+
+.primary-off-button:hover {
+    background-color: var(--main-white);
+    color: var(--main-black);
+    border: 2px solid var(--main-soft-black)
 }
 /* buttons end */
 

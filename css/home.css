@@ -1,6 +1,4 @@
 /* specific styling for home page */
-
-
 /* hero start */
 .hero {
     display: flex;
@@ -16,7 +14,7 @@
     padding: 2rem;
     background: rgb(214, 69, 80, 0.1);
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(168, 76, 76, 0.1);
+    box-shadow: 0 4px 30px rgba(168, 76, 76, 0.3);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -77,6 +75,70 @@
     color: var(--main-soft-black);
 }
 /* services end */
+
+/* projects start */
+.projects-sample > .container {
+    display: block;
+    text-align: center;
+}
+
+.projects-sample > .container > h3 {
+    font-size: 2vw;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+.projects-item img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border: 10px solid #fefae0;
+    -webkit-filter: sepia(100%);
+    filter: sepia(100%);
+    transition-duration: .5s;
+}
+
+.projects-item img:hover {
+    filter: sepia(0%);
+}
+/* projects end */
+
+/* call to action start */
+.call-to-action {
+    background-color: var(--main-red);
+    color: var(--main-white);
+    margin-top: 4rem;
+    padding: 4rem;
+}
+
+.call-to-action .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.cta-title {
+    font-size: 3.9vw;
+}
+
+.cta-description {
+    font-size: 1rem ;
+    font-size: 2vw; 
+    color: var(--main-white);
+    text-align: left;
+    margin-bottom: 72px; 
+    line-height: 2.6vw;
+    letter-spacing: -.1vw;
+    text-align: center;
+}
+/* call to action end */
 
 
 
