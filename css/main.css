@@ -45,7 +45,7 @@
     border-radius: 1rem;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 1.2vw;
+    font-size: 1.4vw;
     transition: color 0.3s ease-in-out;
     display: inline-block;
     overflow: hidden;
@@ -107,18 +107,16 @@
     font-size: .8rem;
     font-size: 1.2vw;
     text-decoration: none;
-    color: var();
-    background-color: var();
+    color: var(--main-platinum);
+    background-color: var(--main-blue-medium);
     padding: 0.833vw 3.75vw;
-    transition: all .1s ease-in-out;
+    transition: .1s ease-in-out;
     border-radius: .5vw;
-    border: 2px solid pink;
+    border: 1px solid var(--main-platinum);
 }
 
 .primary-off-button:hover {
-    background-color: var();
-    color: var();
-    border: 2px solid var()
+    background-color: var(--main-blue-light);
 }
 /* buttons end */
 

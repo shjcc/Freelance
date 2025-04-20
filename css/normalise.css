@@ -7,10 +7,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* remove all default spacing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* parent in the DOM tree */
 :root {
   /* colour palette */
   --main-black: rgb(26, 9, 13);
-  --main-black-light: rgba(26, 9, 13, 0.6);
+  --main-black-light: rgba(26, 9, 13, 0.7);
   --main-white: rgb(244, 243, 242);
   --main-red: rgb(214, 69, 80);
   --main-platinum: rgb(238, 226, 223);

@@ -30,8 +30,8 @@
 .hero-title {
     font-size: 2rem;
     font-size: 3.9vw;
-    color: var(--main-black);
-    margin-bottom: 72px; 
+    color: var(--main-blue-dark);
+    margin-bottom: 64px; 
 }
 
 .hero-description {
@@ -47,7 +47,32 @@
 
 /* services start */
 .services > .container {
-    padding: 4rem 4rem 2rem 4rem;
+    background-color: var(--main-thistle);
+    padding: 4rem 4rem 4rem 4rem;
+    margin-top: 6vw;
+    margin-bottom: 6vw;
+}
+
+.marquee {
+    --gap: 1rem;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: var(--gap);
+    padding-bottom: 2rem;
+}
+  
+.marquee__content {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-around;
+    min-width: 100%;
+    gap: var(--gap);
+    animation: scroll 10s linear infinite;
+    font-size: 3vw;
+    list-style: none;
+    color: var(--main-blue-dark);
+    text-transform: uppercase;
 }
 
 .service-grid {
@@ -57,22 +82,24 @@
 }
 
 .service-item {
-    text-align: left;
-    font-size: 1.4vw;
-}
-
-.services > .container > h3 {
-    font-size: 2vw;
-    color: var();
-    text-align: center;
-}
+    background: var(--main-platinum);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+  }
+  
+  .service-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  }
 
 .service-item > h4 {
-    color: rgba(26, 9, 13, 0.845);
+    color: var(--main-black);
     margin-bottom: 32px; 
 }
 .service-item > p {
-    color: var(-soft-black);
+    color: var(--main-black-light);
 }
 /* services end */
 
@@ -83,7 +110,7 @@
 }
 
 .projects-sample > .container > h3 {
-    font-size: 2vw;
+    font-size: 3vw;
 }
 
 .projects-grid {
@@ -111,8 +138,7 @@
 
 /* call to action start */
 .call-to-action {
-    background-color: var();
-    color: var();
+    background-color: var(--main-black-light);
     margin-top: 4rem;
     padding: 4rem;
 }
@@ -126,12 +152,13 @@
 
 .cta-title {
     font-size: 3.9vw;
+    color: var(--main-platinum);
 }
 
 .cta-description {
     font-size: 1rem ;
     font-size: 2vw; 
-    color: var();
+    color: var(--main-platinum);
     text-align: left;
     margin-bottom: 72px; 
     line-height: 2.6vw;
@@ -140,6 +167,18 @@
 }
 /* call to action end */
 
+
+/* animations start */
+@keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+}
+
+/* animations end */
 
 
 /* media queries */

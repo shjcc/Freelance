@@ -43,7 +43,17 @@
     <!-- i think 6 grids at least would be visually nicer -->
     <section class="services">
         <div class="container">
-            <h3>Some of my services</h3>
+            <div class="marquee">
+                <ul class="marquee__content">
+                  <li>Some of my services</li>
+                  <li>Some of my services</li>
+                </ul>
+                <!-- Mirrors the content above -->
+                <ul class="marquee__content" aria-hidden="true">
+                  <li>Some of my services</li>
+                  <li>Some of my services</li>
+                </ul>
+              </div>
             <div class="service-grid">
                 <div class="service-item">
                     <h4>Custom website design</h4>
