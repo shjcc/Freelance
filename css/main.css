@@ -15,6 +15,8 @@
 }
 
 .nav-center {
+    font-family: var(--font-nav);
+    letter-spacing: .2rem;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -28,11 +30,8 @@
 }
 
 .nav-right {
-    border: 1px solid rgba(0, 0, 0, 0.03);
-}
-
-.nav-right {
     display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.03);
     align-items: center;
 }
 
@@ -49,13 +48,14 @@
     transition: color 0.3s ease-in-out;
     display: inline-block;
     overflow: hidden;
-
 }
 
 .nav-right a {
+    font-family: var(--font-title);
+    letter-spacing: .1rem;
     color: var(--main-platinum);
     background-color: var(--main-blue-dark);
-    transition: background-color 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .nav-center a::after {
@@ -65,7 +65,7 @@
     left: 50%;
     transform: translateX(-50%);
     width: 0%;
-    height: 2px;
+    height: 3px;
     background-color: var(--main-blue-medium);
     transition: width 0.2s ease-in-out;
 }
@@ -78,44 +78,26 @@
 }
 
 .nav-right a:hover  {
+    letter-spacing: .2rem;
     background-color: var(--main-blue-light);
-    transition: background-color 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 /* navbar end */
 
 /* buttons begin */
 /* red then hover black */
 .primary-button {
-    font-size: .8rem;
-    font-size: 1.2vw;
-    text-decoration: none;
-    color: var(--main-white);
-    background-color: var(--main-blue-medium);
-    padding: 0.833vw 3.75vw;
-    transition: background-color, color .2s ease-in-out;
-    border-radius: .5vw;
-}
-
-.primary-button:hover {
-    background-color: var(--main-blue-light);
-    color: var(--main-black-light);
-    transition: background-color, color .2s ease-in-out;
-}
-
-/* black then hover white */
-.primary-off-button {
-    font-size: .8rem;
-    font-size: 1.2vw;
+    font-family: var(--font-title);
+    font-size: clamp(0.9rem, 1.2vw, 1.1rem);
     text-decoration: none;
     color: var(--main-platinum);
     background-color: var(--main-blue-medium);
-    padding: 0.833vw 3.75vw;
+    padding: 0.6rem 2rem;
     transition: .1s ease-in-out;
-    border-radius: .5vw;
-    border: 1px solid var(--main-platinum);
+    border-radius: 0.5rem;
 }
 
-.primary-off-button:hover {
+.primary-button:hover {
     background-color: var(--main-blue-light);
 }
 /* buttons end */
