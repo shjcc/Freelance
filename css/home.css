@@ -50,10 +50,13 @@
 /* hero end */
 
 /* services start */
+.services {
+    padding-top: 4rem; /* not margin on container */
+
+}
 .services > .container {
-    background-color: var(--main-thistle);
-    padding: 4rem 4rem 4rem 4rem;
-    margin-top: 6vw;
+    background-color: rgba(222, 193, 219, 0.85); /* instead of solid var */
+    backdrop-filter: blur(5px); /* optional: matches the glassy look from hero */    padding: 4rem 4rem 4rem 4rem;
     margin-bottom: 6vw;
     box-shadow:
     0 -20px 20px -20px rgba(0, 0, 0, 0.1),

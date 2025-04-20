@@ -93,7 +93,7 @@
     font-family: var(--font-title);
     font-size: clamp(0.9rem, 1.2vw, 1.1rem);
     text-decoration: none;
-    color: var(--main-platinum);
+    color: white;
     background-color: var(--main-blue-medium);
     padding: 0.6rem 2rem;
     transition: .1s ease-in-out;
