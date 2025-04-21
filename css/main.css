@@ -34,8 +34,10 @@
 
 .nav-right {
     display: flex;
-    border: 1px solid rgba(0, 0, 0, 0.03);
     align-items: center;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.3); 
+    transition: all .2s ease-in-out;
 }
 
 .nav-center a,
@@ -76,14 +78,15 @@
 .nav-center a:hover::after, .nav-center a.active::after  {
     width: 80%;
 }
+
 .nav-center a:hover, .nav-center a.active {
     color: var(--main-blue-medium);
 }
 
-.nav-right a:hover  {
-    letter-spacing: .2rem;
-    background-color: var(--main-blue-light);
-    transition: all 0.3s ease-in-out;
+.nav-right:hover {
+    transform: translateY(-3px); 
+    box-shadow: 5px 8px  rgba(0, 0, 0, 0.3); 
+    transition: all .2s ease-in-out;
 }
 /* navbar end */
 
