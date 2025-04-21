@@ -17,6 +17,9 @@ body {
 
 /* parent in the DOM tree */
 :root {
+  box-shadow:none !important;
+
+
   /* font family */
   --font-nav:"Special Gothic Condensed One", sans-serif;
   --font-title: "Ubuntu", sans-serif; 
