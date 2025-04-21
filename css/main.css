@@ -24,6 +24,7 @@
     left: 50%;
     transform: translateX(-50%);
     display: flex;
+    justify-content: space-evenly;
     gap: 1rem;
     background-color: var(--main-white);
     padding: 0.5em 1rem; 
