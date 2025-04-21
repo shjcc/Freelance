@@ -15,10 +15,9 @@
     border-radius: 1rem;    
     background: var(--main-white);
     box-shadow: 0 4px 30px rgba(168, 76, 76, 0.3);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     transition: all .2s ease-in-out;
+    will-change: transform, box-shadow;
 }
 
 .hero .container:hover {
@@ -42,8 +41,8 @@
     margin-bottom: 4rem;
     letter-spacing: -.01vw;
     font-size: clamp(1rem, 2vw, 1.5rem);
-    line-height: 1.6; /* replace vw line-height */
-    width: 100%; /* avoid hardcoding width in vw */
+    line-height: 1.6; 
+    width: 100%; 
     max-width: 50rem;
     margin-inline: auto;
 }
@@ -51,12 +50,12 @@
 
 /* services start */
 .services {
-    padding-top: 4rem; /* not margin on container */
+    padding-top: 4rem; 
 
 }
 .services > .container {
-    background-color: rgba(222, 193, 219, 0.85); /* instead of solid var */
-    backdrop-filter: blur(5px); /* optional: matches the glassy look from hero */    padding: 4rem 4rem 4rem 4rem;
+    background-color: rgba(222, 193, 219, 0.85); 
+    padding: 4rem 4rem 4rem 4rem;
     margin-bottom: 6vw;
     box-shadow:
     0 -20px 20px -20px rgba(0, 0, 0, 0.1),
@@ -85,6 +84,7 @@
     list-style: none;
     color: var(--main-blue-dark);
     text-transform: uppercase;
+    will-change: transform;
 }
 
 .service-grid {
@@ -136,6 +136,7 @@
 .projects-sample > .container > h3 {
     font-family: var(--font-title);
     font-size: clamp(2rem, 5vw, 3.5rem);
+    color: var(--main-blue-dark);
 }
 
 .projects-grid {
