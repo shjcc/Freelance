@@ -14,9 +14,10 @@ navLinks.forEach(link => {
 // mobile navbar 
 document.addEventListener("DOMContentLoaded", () => {
     const menuButton = document.querySelector(".mobile-menu");
-    const navCenter = document.querySelector(".nav-center");
-  
+    const mobileMenu = document.querySelector(".mobile-screen");
+
     menuButton.addEventListener("click", () => {
-      navCenter.classList.toggle("open");
+      menuButton.classList.toggle("active");
+      mobileMenu.classList.toggle("active");
     });
 });
