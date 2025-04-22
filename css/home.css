@@ -3,7 +3,7 @@
 .hero {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; 
+    justify-content: flex-end;
     align-items: center;
     min-height: 50vh;
     margin-top: clamp(1rem, -4vw, 3rem);
@@ -12,7 +12,7 @@
 
 .hero .container {
     padding: 2rem;
-    border-radius: 1rem;    
+    border-radius: 1rem;
     background: var(--main-white);
     box-shadow: 0 4px 30px rgba(168, 76, 76, 0.3);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -29,7 +29,7 @@
 .hero-title {
     font-family: var(--font-title);
     font-weight: 500;
-    font-size: clamp(2rem, 5vw, 3.5rem); 
+    font-size: clamp(2rem, 5vw, 3.5rem);
     color: var(--main-blue-dark);
     margin-bottom: 4rem;
 }
@@ -41,25 +41,27 @@
     margin-bottom: 4rem;
     letter-spacing: -.01vw;
     font-size: clamp(1rem, 2vw, 1.5rem);
-    line-height: 1.6; 
-    width: 100%; 
+    line-height: 1.6;
+    width: 100%;
     max-width: 50rem;
     margin-inline: auto;
 }
+
 /* hero end */
 
 /* services start */
 .services {
-    padding-top: 4rem; 
+    padding-top: 4rem;
 
 }
-.services > .container {
-    background-color: var(--main-blue-dark); 
+
+.services>.container {
+    background-color: var(--main-blue-dark);
     padding: 4rem 4rem 4rem 4rem;
     margin-bottom: 6vw;
     box-shadow:
-    0 -20px 20px -20px rgba(0, 0, 0, 0.1),
-    0 20px 20px -20px rgba(0, 0, 0, 0.1); 
+        0 -20px 20px -20px rgba(0, 0, 0, 0.1),
+        0 20px 20px -20px rgba(0, 0, 0, 0.1);
 }
 
 .marquee {
@@ -70,7 +72,7 @@
     gap: var(--gap);
     padding-bottom: 2rem;
 }
-  
+
 .marquee__content {
     font-family: var(--font-nav);
     letter-spacing: 1rem;
@@ -89,7 +91,7 @@
 
 .service-grid {
     display: grid;
-    grid-template-columns:  1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 2rem;
 }
 
@@ -101,21 +103,21 @@
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
 }
-  
+
 .service-item:hover {
     transform: translateY(-4px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
 }
 
-.service-item > h4 {
+.service-item>h4 {
     font-family: var(--font-title);
     font-weight: 800;
     color: var(--main-black);
-    margin-bottom: 2rem; 
+    margin-bottom: 2rem;
     text-align: center;
 }
 
-.service-item > h4::after {
+.service-item>h4::after {
     content: "";
     display: block;
     width: 60px;
@@ -125,59 +127,127 @@
     border-radius: 2px;
 }
 
-.service-item > p {
+.service-item>p {
     font-family: var(--font-body);
     color: var(--main-black-light);
 }
 
-.services > .container > .primary-button {
+.services>.container>.primary-button {
     display: block;
     margin: auto;
     text-align: center;
-    margin-top: 2rem;  
+    margin-top: 2rem;
     width: 12rem;
-    color: var(--main-white);
-    background-color: var(--main-black);
+    color: var(--main-green);
+    background-color: var(--main-white);
 }
 
-.services > .container > .primary-button:hover {
-    background-color: var(--main-black-light);
-    color: var(--main-platinum);
+.services>.container>.primary-button:hover {
+    background-color: var(--main-platinum);
 }
+
 /* services end */
 
 /* projects start */
-.projects-sample > .container {
-    display: block;
+.projects-sample>.container>h3 {
+    font-family: var(--font-nav);
+    letter-spacing: .5rem;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    color: var(--main-blue-dark);
     text-align: center;
 }
 
-.projects-sample > .container > h3 {
-    font-family: var(--font-title);
-    font-size: clamp(2rem, 5vw, 3.5rem);
-    color: var(--main-blue-dark);
+.projects-sample > .container {
+    position: relative;
+    padding: 0 10vw; 
 }
 
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 4rem;
-    justify-items: center;
-    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 0;
+    list-style: none;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scroll-padding: 0 10vw; 
 }
 
-.projects-item img {
-    width: 100%;
-    max-width: 350px;
-    height: auto;
-    border: 1ren solid #fefae0;
-    -webkit-filter: sepia(100%);
-    filter: sepia(100%);
-    transition-duration: .5s;
+.projects-grid::-webkit-scrollbar {
+    display: none;
 }
 
-.projects-item img:hover {
-    filter: sepia(0%);
+.p-item {
+    flex-shrink: 0;
+    width: 70%; 
+    height: 70vh; 
+    background-color: gray;
+    scroll-snap-align: center;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.p-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-family: var(--font-body);
+    font-size: 3rem;
+}
+
+.project-button-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); 
+    display: flex;
+    gap: 1rem; 
+    z-index: 10; 
+}
+
+.project-button {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    background: transparent;
+    border: none;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    background-color: var(--main-white);
+}
+
+.project-button:hover {
+    transform: translateY(-50%) scale(1.15);
+}
+
+.btn-next {
+    top: 6rem;
+    left: 1rem;
+}
+
+.btn-previous {
+    top: 6rem;
+    right: 1rem;
+}
+
+.project-button img {
+    width: 1.5rem;
+    height: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.projects-grid::before,
+.projects-grid::after {
+    content: '';
+    flex: 0 0 10vw; 
 }
 /* projects end */
 
@@ -187,8 +257,8 @@
     margin-top: 4rem;
     padding: 4rem;
     box-shadow:
-    0 -20px 20px -20px rgba(0, 0, 0, 0.1),
-    0 20px 20px -20px rgba(0, 0, 0, 0.1);  
+        0 -20px 20px -20px rgba(0, 0, 0, 0.1),
+        0 20px 20px -20px rgba(0, 0, 0, 0.1);
 }
 
 .call-to-action .container {
@@ -201,102 +271,35 @@
 .cta-title {
     font-family: var(--font-nav);
     letter-spacing: .2rem;
-    font-size: clamp(2rem, 5vw, 3.5rem);;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    ;
     color: var(--main-platinum);
 }
 
 .cta-description {
     font-family: var(--font-body);
     font-size: 1rem;
-    font-size: clamp(1rem, 2vw, 1.5rem); 
+    font-size: clamp(1rem, 2vw, 1.5rem);
     letter-spacing: .05rem;
     color: var(--main-white);
     text-align: left;
-    margin-bottom: 3rem; 
+    margin-bottom: 3rem;
     line-height: 2.6vw;
     text-align: center;
 }
+
 /* call to action end */
 
 
 /* animations start */
 @keyframes scroll {
     from {
-      transform: translateX(0);
+        transform: translateX(0);
     }
+
     to {
-      transform: translateX(calc(-100% - var(--gap)));
+        transform: translateX(calc(-100% - var(--gap)));
     }
 }
 
 /* animations end */
-
-
-/* media queries */
-/* tablet */
-@media (max-width: 1024px) {
-    .hero-title, .hero-description {
-        margin-bottom: 2rem;
-    }
-
-    .service-grid {
-        grid-template-columns: auto;
-    }
-}
-  
-  /* mobile  */
-@media (max-width: 600px) {
-    /* hero */
-    .hero {
-        padding: 1.2rem;
-        margin-top: 1rem;
-        min-height: auto;
-    }
-    .hero .container {
-        padding: 1rem;
-    }
-    .hero-title {
-        font-size: clamp(1.5rem, 6vw, 2.5rem);
-    }
-    .hero-description {
-        font-size: clamp(0.95rem, 3vw, 1.2rem);
-    }
-
-    /* services */
-    .service-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-    .services > .container {
-        padding: 2rem;
-    }
-    .marquee__content {
-        font-size: clamp(1.5rem, 6vw, 2.5rem);
-    }
-
-    /* projects */
-    .projects-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .call-to-action {
-        padding-left: 0;
-        padding-right: 0;
-      }
-    .call-to-action .container {
-        max-width: 100%;
-        width: 100%;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        box-sizing: border-box;
-    }
-    .cta-title {
-        font-size: clamp(1.5rem, 6vw, 2.5rem);
-        letter-spacing: -.05rem;
-    }
-    .cta-description {
-        font-size: clamp(0.95rem, 3vw, 1.2rem);
-        letter-spacing: 0;
-        line-height: 1rem;
-    }
-}

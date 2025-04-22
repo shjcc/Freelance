@@ -1,5 +1,3 @@
-// sticky headers and mobile nav toggles
-
 // detect current pages
 const currentLocation = window.location.pathname.split("/").pop();
 const navLinks = document.querySelectorAll(".nav-center a, .nav-right a");

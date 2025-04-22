@@ -3,15 +3,17 @@
     font-family: var(--font-title);
     font-size: clamp(0.9rem, 1.2vw, 1.1rem);
     text-decoration: none;
-    color: white;
-    background-color: var(--main-blue-medium);
+    color: var(--main-platinum);
+    background-color: var(--main-green);
     padding: 0.6rem 2rem;
     transition: .1s ease-in-out;
     border-radius: 0.5rem;
 }
 
 .primary-button:hover {
-    background-color: var(--main-blue-light);
+    background-color: rgb(58, 161, 140); 
+    box-shadow: 0 0 10px rgba(34, 139, 120, 0.4);
+
 }
 
 /* buttons end */
@@ -52,51 +54,6 @@
 
 /* mobile */
 @media (max-width: 600px) {
-
-    .nav-center,
-    .nav-right {
-        display: none;
-        visibility: hidden;
-    }
-
-    .mobile-menu {
-        position: absolute;
-        top: 1rem;
-        right: 1rem;
-        display: block;
-        visibility: visible;
-    }
-
-    .mobile-screen {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 2rem;
-        padding-top: 2rem;
-        z-index: 998;
-    }
-
-    .mobile-screen.active {
-        transform: translateX(0%);
-    }
-
-
-    .mobile-screen a {
-        color: var(--main-black);
-        text-decoration: none;
-        font-size: 1.5rem;
-        font-family: var(--font-nav);
-        text-transform: uppercase;
-        font-weight: bold;
-        transition: color 0.3s ease;
-        padding: 0 2rem;
-    }
-
-    .mobile-screen a:hover {
-        color: var(--main-thistle);
-    }
-
     /* footer */
     .footer-container>p {
         font-size: .8rem;
