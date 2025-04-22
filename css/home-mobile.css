@@ -42,18 +42,27 @@
     }
 
     .services>.container {
-        padding: 5rem;
+        padding: 2rem;
     }
 
     .marquee__content {
-        font-size: clamp(1.5rem, 6vw, 2.5rem);
+        font-size: clamp(1.7rem, 7vw, 2.8rem);
     }
 
     /* projects */
-    .projects-grid {
-        grid-template-columns: 1fr 1fr;
+    .projects-sample > .container > h3 {
+        font-size: 2rem;
+    }
+    .p-item {
+        width: 80%;
+        height: 30vh;
     }
 
+    .project-button-container {
+        visibility: hidden;
+    }
+
+    /* call to action */
     .call-to-action {
         padding-left: 0;
         padding-right: 0;

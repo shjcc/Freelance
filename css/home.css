@@ -303,3 +303,16 @@
 }
 
 /* animations end */
+
+/* mobile */
+@media (max-width: 600px) {
+    
+    /* projects */
+    .p-item {
+        width: 80%; 
+        height: 30vh; 
+    }
+    .project-button-container {
+        visibility: hidden;
+    }
+}
