@@ -55,7 +55,7 @@ h4::after {
 .about-item {
     font-size: clamp(1rem, 2vw, 1.25rem);
     border: 2px solid var(--main-black-light);
-    padding: 1rem 2rem 3rem 2rem;
+    padding: 4rem;
     font-family: var(--font-body);
     color: var(--main-black-light);
     border-radius: .5rem;
@@ -83,6 +83,7 @@ h4::after {
 .skills>.container {
     max-width: 1200px;
     margin: 0 auto;
+    margin-bottom: 2rem;
 }
 
 .skills-grid {
@@ -157,4 +158,52 @@ h4::after {
     margin: 1rem auto 0;
     background-color: var(--main-black-light);
     border-radius: 2px;
+}
+
+/* mobile */
+@media (max-width: 600px) {
+    .about-title {
+        font-size: 2.5rem;
+    }
+
+    .about-description {
+        font-size: 1.25rem;
+    }
+
+    .about-item > h4 {
+        font-size: 2rem;
+    }
+
+    .about-item > p {
+        font-size: 1rem;
+    }
+
+    .about-item {
+        max-width: 100%;
+        padding: 2rem;
+    }
+
+    .skills-title {
+        font-size: 2rem;
+    }
+
+    .skills {
+        padding: 2rem 1rem; 
+    }
+    .skills-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .skills-item img, .skills-item svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .skills-grid > .skills-item:last-child {
+        grid-column: 2 / 3; 
+    }
+
+    .skills-item p {
+        font-size: 1.2rem;
+    }
 }

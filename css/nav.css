@@ -147,7 +147,7 @@
     top: 0;
     right: -75%;
     background-color: var(--main-white);
-    height: 60vw;
+    height: 70vw;
     width: 55%;
     transition: right .5s;
     border-bottom-left-radius: 25px;
