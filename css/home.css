@@ -98,7 +98,7 @@
 .service-item {
     background: var(--main-white);
     font-size: clamp(1rem, 1.2vw, 1.25rem);
-    padding: 2rem;
+    padding: 4rem;
     border-radius: 1rem;
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
@@ -306,7 +306,7 @@
 
 /* mobile */
 @media (max-width: 600px) {
-    
+
     /* projects */
     .p-item {
         width: 80%; 
