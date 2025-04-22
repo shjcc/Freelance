@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Freelance portfolio for web design + development"/>
     <title>Contact</title>
+    <link rel="stylesheet" href="css/contact.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/normalise.css" />
     <link rel="stylesheet" href="css/bg.css" />
@@ -23,7 +24,7 @@
             </nav>
         
             <div class="nav-right">
-                <a href="contact.html">Contact</a>
+                <a href="contact.html" class="contact-active">Contact</a>
             </div>
         </div>
     </header>
@@ -31,15 +32,17 @@
     <!-- contact -->
     <section class="contact">
         <div class="container">
+    <h3 class="contact-title">Let's discuss your website!</h3>
+
             <form id="contact-form">
                 <label for="fullname">Name</label>
-                <input type="text" name="name" required>
+                <input type="text" placeholder="first name" name="name" required>
 
                 <label for="email">Email</label>
-                <input type="email" name="email" required> 
+                <input type="email" placeholder="example@email.com" name="email" required> 
 
                 <label for="subject">Message</label>
-                <textarea name="message"></textarea>
+                <textarea name="message" placeholder="enter message"></textarea>
 
                 <input type="submit" value="Send">
             </form>

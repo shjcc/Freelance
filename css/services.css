@@ -1,0 +1,93 @@
+/* specific styling for services page */
+body {
+    background: linear-gradient(to bottom right, #eef2f7, #dfe9f3);
+}
+
+.nav-center {
+    background-color: var(--main-blue-dark) !important;
+}
+
+.nav-center a {
+    color: var(--main-white) !important;
+}
+
+.nav-center a::after {
+    background-color: var(--main-white) !important;
+}
+
+.services-section {
+    padding: 6rem 1.25rem;
+    padding-top: 1rem;
+    background: linear-gradient(to bottom right, #eef2f7, #dfe9f3);
+}
+
+.container {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-family: var(--font-nav);
+    font-size: 3rem;
+    letter-spacing: .2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--main-blue-dark);
+
+}
+
+.section-subtitle {
+    font-family: var(--font-title);
+    font-size: 1.25rem;
+    text-align: center;
+    margin-bottom: 3.75rem;
+    color: var(--main-black);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    gap: 2.5rem;
+}
+
+.service-card {
+    background: white;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 1.25rem;
+    padding: 1.8rem 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+}
+
+.service-card .skills-icon {
+    width: 3.75rem;
+    height: 3.75rem;
+    object-fit: contain;
+    margin: 0 auto 1rem auto;
+    display: block;
+}
+
+.skills-icon img {
+    filter: invert(20%) sepia(90%) saturate(300%) hue-rotate(270deg) brightness(95%) contrast(80%);
+}
+
+.service-card h3 {
+    font-family: var(--font-nav);
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: var(--main-black);
+}
+
+.service-card p {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--main-black-light);
+    text-wrap: balance;
+}
