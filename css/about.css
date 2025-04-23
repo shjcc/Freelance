@@ -264,41 +264,38 @@ h4::after {
 
     .skills {
         padding: 2rem 1rem;
+        padding-bottom: 8rem;
+
     }
 
     .skills-grid {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
     .skills-item img,
     .skills-item svg {
-        width: 40px;
-        height: 40px;
+        width: 2rem;
+        height: 2rem;
     }
 
-    .skills-grid>.skills-item:last-child {
-        grid-column: 2 / 3;
+    .skills-item:nth-child(9) {
+        grid-column: 2;
+    }
+
+    .skills-item:nth-child(10) {
+        grid-column: 3;
     }
 
     .skills-item p {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .skills-grid {
         text-align: center;
-        padding-bottom: 6rem;
     }
 
     .skills-item {
-        grid-template-columns: 1fr 1fr 1fr;
-        margin-bottom: 20px; /* Add space between skills items */
-    }
-
-    .about-grid {
-        display: block; /* Stack .about-item vertically on smaller screens */
-    }
-
-    .about-item {
-        margin-bottom: 20px; /* Space out items */
+        padding: 1rem 1rem;
+        margin-bottom: 20px; 
     }
 }

@@ -5,6 +5,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
+    animation: fadeIn 1s ease-in-out forwards;
 }
 
 .logo,
@@ -155,6 +156,18 @@
 
 .mobile-screen.active {
     right: 0;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
 }
 
 /* navbar end */
