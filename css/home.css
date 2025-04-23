@@ -1,4 +1,9 @@
-/* specific styling for home page */
+/* breathing room between sections */
+section {
+    padding-block: 6rem;
+}
+
+
 /* hero start */
 .hero {
     display: flex;

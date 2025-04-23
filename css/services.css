@@ -1,6 +1,7 @@
 /* specific styling for services page */
-body {
-    background: linear-gradient(to bottom right, #eef2f7, #dfe9f3);
+.services-body {
+    background-color: #dfe9f3;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23eef2f7' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
 
 .nav-center {
@@ -11,14 +12,17 @@ body {
     color: var(--main-white) !important;
 }
 
+.nav-center a:hover {
+    color: var(--main-platinum) !important;
+}
+
 .nav-center a::after {
-    background-color: var(--main-white) !important;
+    background-color: var(--main-platinum) !important;
 }
 
 .services-section {
     padding: 6rem 1.25rem;
     padding-top: 1rem;
-    background: linear-gradient(to bottom right, #eef2f7, #dfe9f3);
 }
 
 .container {
@@ -28,7 +32,7 @@ body {
 
 .section-title {
     font-family: var(--font-nav);
-    font-size: 3rem;
+    font-size: clamp(2rem, 10vw, 6rem);
     letter-spacing: .2rem;
     font-weight: 700;
     text-align: center;
