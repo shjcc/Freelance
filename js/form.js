@@ -19,4 +19,3 @@ async function send_email(event) {
       alert('email not sent.');
     }
 }
-  

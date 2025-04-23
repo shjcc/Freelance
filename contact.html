@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="css/contact.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/normalise.css" />
-    <link rel="stylesheet" href="css/bg.css" />
 </head>
 
 <body>
+
     <!-- navbar -->
     <header>
         <div class="nav-container">
@@ -47,19 +47,26 @@
     <!-- contact -->
     <section class="contact">
         <div class="container">
-            <h3 class="contact-title">Let's discuss your website!</h3>
-
+            <h3 class="contact-title">Let's get in touch</h3>
             <form id="contact-form">
-                <label for="fullname">Name</label>
-                <input type="text" placeholder="first name" name="name" required>
+                <div class="contact-item">
+                    <label for="fullname">who are you?</label>
+                    <input type="text" placeholder="[ your name ]" name="name" required>
+                </div>
 
-                <label for="email">Email</label>
-                <input type="email" placeholder="example@email.com" name="email" required>
+                <div class="contact-item">
+                    <label for="email">how do i contact you?</label>
+                    <input type="email" placeholder="[ your email ]" name="email" required>
+                </div>
 
-                <label for="subject">Message</label>
-                <textarea name="message" placeholder="enter message"></textarea>
+                <div class="contact-item">
+                    <label for="subject">what do you want to say?</label>
+                    <textarea name="message" placeholder="[ your message ]"></textarea>
+                </div>
 
-                <input type="submit" value="Send">
+                <div class="contact-item">
+                    <input type="submit" value="[ send ]">
+                </div>
             </form>
         </div>
     </section>
