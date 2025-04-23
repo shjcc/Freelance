@@ -1,7 +1,8 @@
 /* specific styling for about page */
 body {
     background-color: #DFDBE5 !important;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%239C92AC' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");}
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%239C92AC' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
 
 .nav-center {
     background-color: var(--main-green);
@@ -25,6 +26,7 @@ body {
 }
 
 .about-title {
+    visibility: hidden;
     font-family: var(--font-nav);
     font-size: clamp(2rem, 10vw, 6rem);
     font-weight: bold;
@@ -35,7 +37,14 @@ body {
     margin-bottom: 1rem;
 }
 
-.about-description {
+/* for title js */
+.fade-up {
+    visibility: visible;
+    animation: fadeUp 1s ease-in-out forwards;
+}
+
+
+.fade-description {
     font-family: var(--font-body);
     font-size: clamp(1rem, 3vw, 3rem);
     letter-spacing: -.05rem;
@@ -43,7 +52,14 @@ body {
     max-width: 50%;
     margin: 0 auto;
     color: var(--main-black);
+    opacity: 0;
+    visibility: hidden;
+    animation: fadeIn 1s ease-in-out forwards;
 }
+
+.fade-description:nth-child(1) { animation-delay: .5s;}
+.fade-description:nth-child(2) { animation-delay: 1s;}
+.fade-description:nth-child(3) { animation-delay: 1.5s;}
 
 .about-grid {
     padding: 6rem 2rem;
@@ -81,8 +97,14 @@ h4::after {
     text-wrap: balance;
     transition: all .2s ease-in-out;
     text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
 }
-
+.about-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 .about-item:hover {
     transform: translateY(-10px);
@@ -104,6 +126,7 @@ h4::after {
     gap: 1rem;
     justify-items: center;
     align-items: center;
+    padding: 2rem 2rem 6rem 2rem;
 }
 
 .skills-item {
@@ -121,6 +144,19 @@ h4::after {
     text-align: center;
     width: 100%;
     max-width: 180px;
+}
+
+.skills-item,
+.skills-title {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.skills-item.visible,
+.skills-title.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .skills-item img {
@@ -173,6 +209,32 @@ h4::after {
     border-radius: 2px;
 }
 
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
 /* mobile */
 @media (max-width: 600px) {
     .about-title {
@@ -183,11 +245,11 @@ h4::after {
         font-size: 1.25rem;
     }
 
-    .about-item > h4 {
+    .about-item>h4 {
         font-size: 2rem;
     }
 
-    .about-item > p {
+    .about-item>p {
         font-size: 1rem;
     }
 
@@ -201,22 +263,42 @@ h4::after {
     }
 
     .skills {
-        padding: 2rem 1rem; 
-    }
-    .skills-grid {
-    grid-template-columns: 1fr 1fr 1fr;
+        padding: 2rem 1rem;
     }
 
-    .skills-item img, .skills-item svg {
+    .skills-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .skills-item img,
+    .skills-item svg {
         width: 40px;
         height: 40px;
     }
 
-    .skills-grid > .skills-item:last-child {
-        grid-column: 2 / 3; 
+    .skills-grid>.skills-item:last-child {
+        grid-column: 2 / 3;
     }
 
     .skills-item p {
         font-size: 1.2rem;
+    }
+
+    .skills-grid {
+        text-align: center;
+        padding-bottom: 6rem;
+    }
+
+    .skills-item {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-bottom: 20px; /* Add space between skills items */
+    }
+
+    .about-grid {
+        display: block; /* Stack .about-item vertically on smaller screens */
+    }
+
+    .about-item {
+        margin-bottom: 20px; /* Space out items */
     }
 }
