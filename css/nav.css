@@ -8,6 +8,15 @@
     animation: fadeIn 1s ease-in-out forwards;
 }
 
+.mobile-menu {
+    z-index: 9999;
+}
+
+.nav-container,
+.mobile-screen {
+    z-index: 9998 !important;
+}
+
 .logo,
 .logo a {
     font-size: clamp(2rem, 5vw, 3.5rem);
