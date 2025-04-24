@@ -6,13 +6,13 @@
 .contact-title {
     flex: 1.2;
     font-size: clamp(2rem, 10vw, 6rem);
-    font-family: var(--font-body);
+    font-family: var(--font-secondary);
     font-weight: 800;
     text-transform: uppercase;
     text-wrap: balance;
     align-items: flex-start;
     margin-top: 0;
-    margin-left: 1rem;
+    margin-left: 2rem;
 }
 
 #contact-form {
@@ -36,7 +36,7 @@ input[type=text], input[type=email] {
 	border-bottom: .1em solid var(--color-black);
 	background: var(--color-cream);
 	border-radius: .2em .2em 0 0;
-    margin-right: 1rem;
+    margin-right: 2rem;
 	color: var(--color-black);
     font-size: 2rem;
 }
@@ -56,7 +56,7 @@ textarea {
     border: none;
     outline: none;
     height: 5em;
-    margin-right: 1rem;
+    margin-right: 2rem;
     resize: vertical;
 	border-bottom: .1em solid var(--color-black);
 	border-radius: .2em .2em 0 0;
@@ -72,13 +72,13 @@ textarea:hover, textarea:focus-within {
 label[for="fullname"], label[for="email"], label[for="subject"]  {
     font-size: 1rem;
     opacity: 0.5;
-    font-family: var(--font-title);
+    font-family: var(--font-primary);
     color: var(--color-black);
     font-style: italic;
 }
 
 input[type="submit"] {
-    font-family: var(--font-title);
+    font-family: var(--font-primary);
     font-size: 1.5rem;
     text-decoration: none;
     color: var(--color-white);
@@ -91,4 +91,46 @@ input[type="submit"] {
 }
 input[type="submit"]:hover {
     background-color: rgba(0, 0, 0, 0.8); 
+}
+
+
+/* mobile */
+@media (max-width: 600px) {
+    .contact .container {
+        display: block;
+        padding: 2rem 2rem 4rem 2rem;
+    }
+
+    .contact-title {
+        font-size: 3em;
+    }
+
+    .contact-item {
+        gap: 1em;
+    }
+
+    input[type=text], input[type=email] {
+        font-size: 2em;
+    }
+
+
+    textarea {
+        font-size: 1.4rem;
+        border-bottom: .2em solid var(--color-black);
+
+    }
+
+
+
+}
+
+/* tablet */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .contact .container {
+        padding-bottom: 4rem;
+    }
+
+    .contact-title {
+        font-size: 4rem;
+    }
 }

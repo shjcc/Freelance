@@ -1,6 +1,6 @@
 /* button begin */
 .primary-button {
-    font-family: var(--font-title);
+    font-family: var(--font-primary);
     font-size: clamp(0.9rem, 1.2vw, 1.1rem);
     text-decoration: none;
     color: var(--color-white);
@@ -31,7 +31,7 @@
 }
 
 .footer-container p {
-    font-family: var(--font-body);
+    font-family: var(--font-primary);
     font-weight: 800;
     text-transform: uppercase;
     color: var(--color-white);

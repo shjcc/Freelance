@@ -37,8 +37,6 @@ gsap.registerPlugin(ScrollTrigger);
 //   });
 // });
 
-
-
 // typewriter effect
 function runTyping() {
   new TypeIt(".hero-title", {

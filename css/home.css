@@ -17,15 +17,35 @@ section {
     padding: 2rem;
     border-radius: 1rem;
     transition: all .2s ease-in-out;
-    will-change: transform, box-shadow;
 }
 
 .hero-title {
+    font-family: var(--font-secondary);
     letter-spacing: -0.25rem;
-    font-weight: 500;
+    font-weight: 300;
     font-size: clamp(4rem, 10vw, 7rem);
     color: var(--color-black);
     margin-bottom: 4rem;
+    z-index: 1;
+}
+
+.hero > .primary-button {
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 3s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
 }
 /* hero end */
 
@@ -49,7 +69,7 @@ section {
 }
 
 .marquee__content {
-    font-family: var(--font-nav);
+    font-family: var(--font-primary);
     letter-spacing: 1rem;
     flex-shrink: 0;
     display: flex;
@@ -57,11 +77,9 @@ section {
     min-width: 100%;
     gap: var(--gap);
     animation: scroll 10s linear infinite;
-    font-size: 3vw;
+    font-size: clamp(4rem, 10vw, 7rem);
     list-style: none;
     color: var(--color-black);
-    text-transform: uppercase;
-    will-change: transform;
 }
 
 .service-grid {
@@ -85,7 +103,7 @@ section {
 }
 
 .service-item>h4 {
-    font-family: var(--font-title);
+    font-family: var(--font-primary);
     font-weight: 800;
     color: var(--color-black);
     margin-bottom: 2rem;
@@ -103,7 +121,8 @@ section {
 }
 
 .service-item>p {
-    font-family: var(--font-body);
+    font-family: var(--font-primary);
+    font-weight: 400;
     color: var(--color-black);
 }
 
@@ -125,7 +144,7 @@ section {
 
 /* projects start */
 .projects-sample>.container>h3 {
-    font-family: var(--font-nav);
+    font-family: var(--font-secondary);
     letter-spacing: .5rem;
     font-size: clamp(2rem, 5vw, 3.5rem);
     color: var(--color-black);
@@ -168,7 +187,6 @@ section {
     align-items: center;
     justify-content: center;
     height: 100%;
-    font-family: var(--font-body);
     font-size: 3rem;
 }
 
@@ -179,7 +197,6 @@ section {
     transform: translateX(-50%); 
     display: flex;
     gap: 1rem; 
-    z-index: 10; 
 }
 
 .project-button {
@@ -240,7 +257,7 @@ section {
 }
 
 .cta-title {
-    font-family: var(--font-nav);
+    font-family: var(--font-secondary);
     letter-spacing: .2rem;
     font-size: clamp(2rem, 5vw, 3.5rem);
     color: var(--color-black);
@@ -248,8 +265,8 @@ section {
 }
 
 .cta-description {
-    font-family: var(--font-body);
-    font-size: 1rem;
+    font-family: var(--font-primary);
+    font-weight: 400;
     font-size: clamp(1rem, 2vw, 1.5rem);
     letter-spacing: .05rem;
     color: var(--color-black);
