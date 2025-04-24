@@ -4,6 +4,7 @@ section {
 
 /* hero start */
 .hero {
+
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -69,7 +70,7 @@ section {
 }
 
 .marquee__content {
-    font-family: var(--font-primary);
+    font-family: var(--font-secondary);
     letter-spacing: 1rem;
     flex-shrink: 0;
     display: flex;

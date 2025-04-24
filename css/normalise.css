@@ -28,3 +28,20 @@ body {
 }
 
 img { max-width: 100%; height: auto; }
+
+
+.bg-wrapper {
+  position: relative;
+  z-index: 0; /* ensure it's behind content inside */
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* now it fills the wrapper, which wraps both sections */
+  background: radial-gradient(circle, rgba(34, 139, 120, 0.5) 10%, rgba(238, 226, 223, 1) 80%);
+  z-index: -1;
+  pointer-events: none;
+}
