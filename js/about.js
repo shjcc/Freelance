@@ -7,7 +7,6 @@ window.onload = function () {
 // animate skills-grid section
 document.addEventListener("DOMContentLoaded", () => {
     const aboutItems = document.querySelectorAll(".about-item");
-    const skillsItems = document.querySelectorAll(".skills-item");
 
     const observerOptions = {
         threshold: 0.3,
