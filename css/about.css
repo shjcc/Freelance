@@ -1,28 +1,10 @@
-/* specific styling for about page */
 body {
     background-color: #DFDBE5 !important;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%239C92AC' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
 
-.nav-center {
-    background-color: var(--main-green);
-}
-
-.nav-center a {
-    color: var(--main-white) !important;
-}
-
-.nav-center a:hover {
-    color: var(--main-platinum) !important;
-}
-
-.nav-center a::after {
-    background-color: var(--main-platinum) !important;
-}
-
-/* about me */
 .about {
-    border-bottom: 2px solid var(--main-thistle);
+    border-bottom: 2px solid var(--color-cream);
 }
 
 .about-title {
@@ -32,12 +14,11 @@ body {
     font-weight: bold;
     padding-top: 1rem;
     letter-spacing: .5rem;
-    color: var(--main-dark);
+    color: var(--color-black);
     text-align: center;
     margin-bottom: 1rem;
 }
 
-/* for title js */
 .fade-up {
     visibility: visible;
     animation: fadeUp 1s ease-in-out forwards;
@@ -51,7 +32,7 @@ body {
     text-align: center;
     max-width: 50%;
     margin: 0 auto;
-    color: var(--main-black);
+    color: var(--color-black);
     opacity: 0;
     visibility: hidden;
     animation: fadeIn 1s ease-in-out forwards;
@@ -70,7 +51,7 @@ body {
 
 h4 {
     font-family: var(--font-nav);
-    color: var(--main-blue-dark);
+    color: var(--color-black);
     font-size: clamp(1rem, 3vw, 2.25rem);
     text-align: center;
 }
@@ -81,17 +62,17 @@ h4::after {
     width: 60px;
     height: 4px;
     margin: 1rem auto 0;
-    background-color: var(--main-black-light);
+    background-color: var(--color-black);
     border-radius: 2px;
 }
 
 .about-item {
-    background-color: var(--main-white);
+    background-color: var(--color-white);
     font-size: clamp(1rem, 2vw, 1.25rem);
-    border: 2px solid var(--main-black-light);
+    border: 2px solid var(--color-black);
     padding: 2rem 4rem 2rem 4rem;
     font-family: var(--font-body);
-    color: var(--main-black-light);
+    color: var(--color-black);
     border-radius: .5rem;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
     text-wrap: balance;
@@ -104,10 +85,6 @@ h4::after {
 .about-item.visible {
     opacity: 1;
     transform: translateY(0);
-}
-
-.about-item:hover {
-    transform: translateY(-10px);
 }
 
 .skills {
@@ -130,17 +107,17 @@ h4::after {
 }
 
 .skills-item {
-    background-color: var(--main-white) !important;
+    background-color: var(--color-white) !important;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 2rem 1rem;
-    background-color: var(--main-);
+    background-color: var(--color-cream);
     border-radius: 1rem;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    border: 1px solid var(--main-black-light);
+    border: 1px solid var(--color-black);
     text-align: center;
     width: 100%;
     max-width: 180px;
@@ -163,11 +140,6 @@ h4::after {
     filter: invert(40%) sepia(90%) saturate(300%) hue-rotate(270deg) brightness(95%) contrast(80%);
 }
 
-.skills-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
-}
-
 .skills-item img,
 .skills-item svg {
     width: 60px;
@@ -185,7 +157,7 @@ h4::after {
 .skills-item p {
     font-family: var(--font-nav);
     font-size: 1.3rem;
-    color: var(--main-black);
+    color: var(--color-black);
     margin: 0;
 }
 
@@ -193,7 +165,7 @@ h4::after {
     font-family: var(--font-nav);
     font-size: clamp(1.5rem, 5vw, 3rem);
     font-weight: 700;
-    color: var(--main-black);
+    color: var(--color-black);
     text-align: center;
     margin-bottom: 3rem;
     letter-spacing: 0.05em;
@@ -205,7 +177,7 @@ h4::after {
     width: 60px;
     height: 4px;
     margin: 1rem auto 0;
-    background-color: var(--main-black-light);
+    background-color: var(--color-black);
     border-radius: 2px;
 }
 

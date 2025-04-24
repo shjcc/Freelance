@@ -3,8 +3,8 @@
     font-family: var(--font-title);
     font-size: clamp(0.9rem, 1.2vw, 1.1rem);
     text-decoration: none;
-    color: var(--main-platinum);
-    background-color: var(--main-green);
+    color: var(--color-white);
+    background-color: var(--color-black);
     padding: 0.6rem 2rem;
     transition: .1s ease-in-out;
     border-radius: 0.5rem;
@@ -21,7 +21,7 @@
 /* footer begin */
 .footer-container {
     width: 100%;
-    background-color: var(--main-blue-dark);
+    background-color: var(--color-black);
     padding: 2rem 1rem;
     display: flex;
     justify-content: center;
@@ -34,7 +34,7 @@
     font-family: var(--font-body);
     font-weight: 800;
     text-transform: uppercase;
-    color: var(--main-platinum);
+    color: var(--color-white);
     font-size: 0.8rem;
     font-weight: 400;
     margin: 0;
@@ -42,7 +42,7 @@
 }
 
 .footer-container span {
-    color: var(--main-thistle);
+    color: var(--color-cream);
 }
 
 /* footer end */

@@ -1,23 +1,6 @@
-/* specific styling for services page */
 .services-body {
     background-color: #dfe9f3;
 background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23eef2f7' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
-}
-
-.nav-center {
-    background-color: var(--main-blue-dark) !important;
-}
-
-.nav-center a {
-    color: var(--main-white) !important;
-}
-
-.nav-center a:hover {
-    color: var(--main-platinum) !important;
-}
-
-.nav-center a::after {
-    background-color: var(--main-platinum) !important;
 }
 
 .services-section {
@@ -37,7 +20,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     font-weight: 700;
     text-align: center;
     margin-bottom: 1rem;
-    color: var(--main-blue-dark);
+    color: var(--color-black);
 
 }
 
@@ -46,7 +29,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     font-size: 1.25rem;
     text-align: center;
     margin-bottom: 3.75rem;
-    color: var(--main-black);
+    color: var(--color-black);
 }
 
 .services-grid {
@@ -85,13 +68,13 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     font-weight: 400;
     font-size: 1.4rem;
     margin-bottom: 1rem;
-    color: var(--main-black);
+    color: var(--color-black);
 }
 
 .service-card p {
     font-family: var(--font-body);
     font-size: 1rem;
     line-height: 1.6;
-    color: var(--main-black-light);
+    color: var(--color-black);
     text-wrap: balance;
 }

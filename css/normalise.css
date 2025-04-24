@@ -7,7 +7,7 @@ html {
 
 /* default browser styles to help with consistency */
 body {
-  background-color: var(--main-platinum);
+  background-color: var(--color-cream);
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
@@ -23,20 +23,14 @@ body {
 :root {
   box-shadow:none !important;
 
-
+/* change fonts */
   /* font family */
-  --font-nav:"Special Gothic Condensed One", sans-serif;
-  --font-title: "Ubuntu", sans-serif; 
-  --font-body: "Lato", sans-serif;
 
   /* colour palette */
-  --main-black: rgb(26, 9, 13);
-  --main-black-light: rgba(26, 9, 13, 0.7);
-  --main-white: rgb(244, 243, 242);
-  --main-green: rgb(34, 139, 120);
-  --main-platinum: rgb(238, 226, 223);
-  --main-thistle: rgb(222, 193, 219);
-  --main-blue-dark: rgb(91, 97, 178);
-  --main-blue-medium: rgb(47, 128, 228);
-  --main-blue-light: rgb(109, 160, 225);
+
+    --color-black: rgb(26, 9, 13);
+  --color-white: rgb(244, 243, 242);
+  --color-cream: rgb(238, 226, 223);
+  --color-green: rgb(34, 139, 120);
+
 }
