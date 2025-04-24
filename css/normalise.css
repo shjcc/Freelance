@@ -20,6 +20,7 @@ body {
 :root {
   --font-primary: "Montserrat", sans-serif;
   --font-secondary: "PT Serif", serif;
+  
   --color-black: rgb(26, 9, 13);
   --color-white: rgb(244, 243, 242);
   --color-cream: rgb(238, 226, 223);
@@ -32,7 +33,7 @@ img { max-width: 100%; height: auto; }
 
 .bg-wrapper {
   position: relative;
-  z-index: 0; /* ensure it's behind content inside */
+  z-index: 0; 
 }
 
 .bg {
@@ -40,8 +41,24 @@ img { max-width: 100%; height: auto; }
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; /* now it fills the wrapper, which wraps both sections */
-  background: radial-gradient(circle, rgba(34, 139, 120, 0.5) 10%, rgba(238, 226, 223, 1) 80%);
+  height: 100%; 
+  background: radial-gradient(circle, rgba(34, 139, 120, 0.4) 10%, rgba(238, 226, 223, 1) 80%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.bg2-wrapper {
+  position: relative;
+  z-index: 0; 
+}
+
+.bg2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; 
+  background: radial-gradient(circle, rgba(222, 84, 30, 0.4) 10%, rgba(238, 226, 223, 1) 80%);
   z-index: -1;
   pointer-events: none;
 }
