@@ -21,12 +21,12 @@
 /* footer begin */
 .footer-container {
     width: 100%;
-    background-color: var(--color-black);
     padding: 2rem 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-color: var(--color-green);
     box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
 }
 

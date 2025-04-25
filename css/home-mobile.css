@@ -21,6 +21,12 @@
         padding: 2rem 1rem;
     }
 
+    .marquee__content {
+        font-size: clamp(3rem, 6vw, 5rem);
+        width: 50%;
+        text-align: center;
+    }
+
     .service-grid {
         grid-template-columns: 1fr;
         grid-gap: 1.5rem;

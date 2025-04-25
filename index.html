@@ -7,6 +7,7 @@
     <meta name="description" content="Freelance portfolio for web design + development" />
     <title>Home</title>
 
+    <link rel="icon" type="image/x-icon" href="./images/favicon.svg">
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/home.css" />
     <link rel="stylesheet" href="css/home-mobile.css" />
@@ -15,163 +16,181 @@
 
 </head>
 
-<body>    
+<body>
     <div class="bg-wrapper">
-    <div class="bg"></div>
-    <!-- navbar -->
-    <header>
-        <div class="nav-container">
-            <div class="logo"><a href="index.html">S.H.</a></div>
+        <div class="bg"></div>
+        <!-- navbar -->
+        <header>
+            <div class="nav-container">
+                <div class="logo"><a href="index.html">S.H.</a></div>
 
-            <div class="mobile-menu" aria-label="toggle menu">
-                <div class="menu menu-top"></div>
-                <div class="menu menu-mid"></div>
-                <div class="menu menu-bottom"></div>
+                <div class="mobile-menu" aria-label="toggle menu">
+                    <div class="menu menu-top"></div>
+                    <div class="menu menu-mid"></div>
+                    <div class="menu menu-bottom"></div>
+                </div>
+                <div class="mobile-screen">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+
+
+                <nav class="nav-center">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                </nav>
+
+                <div class="nav-right">
+                    <a href="contact.html">Contact</a>
+                </div>
             </div>
-            <div class="mobile-screen">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="services.html">Services</a>
-                <a href="contact.html">Contact</a>
+        </header>
+
+        <!-- hero -->
+        <section class="hero">
+            <div class="container">
+                <h2 class="hero-title"></h2>
             </div>
+            <a href="contact.html" class="primary-button">Let's work together</a>
+        </section>
 
+        <!-- services  -->
+        <section class="services">
+            <div class="container">
+                <div class="marquee">
+                    <p class="marquee__content">My services</p>
+                </div>
+                <div class="service-grid">
+                    <div class="service-item">
+                        <h4>Responsive sites</h4>
+                        <p>
+                            Your website will look great on all devices—from mobile screens to large desktop monitors.
+                            No matter where your visitors come from, they&apos;ll get the same high-quality, optimized
+                            experience.
+                        </p>
+                    </div>
 
-            <nav class="nav-center">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="services.html">Services</a>
-            </nav>
+                    <div class="service-item">
+                        <h4>Custom web design</h4>
+                        <p>
+                            I don&apos;t use cookie-cutter templates like WordPress themes. Every site is hand-coded
+                            from scratch,
+                            which means no bloat, lightning-fast load times, and a truly unique presence for your brand.
+                        </p> <br>
+                        <ul>
+                            <li><img src="./assets/check.svg"> Faster loading times</li><br>
+                            <li><img src="./assets/check.svg"> Better security</li> <br>
+                            <li><img src="./assets/check.svg"> Unique designs</li> <br>
+                            <li><img src="./assets/check.svg"> Improved Google rankings</li>
+                        </ul>
+                    </div>
 
-            <div class="nav-right">
-                <a href="contact.html">Contact</a>
+                    <div class="service-item">
+                        <h4>Optimized pages</h4>
+                        <p>
+                            If your website takes more than 3 seconds to load, you could lose up to 50% of your traffic.
+                            My builds load in under 1 second—keeping visitors engaged and conversions high.
+                        </p>
+                    </div>
+
+                    <div class="service-item">
+                        <h4>Maintenance and optimization</h4>
+                        <p>
+                            I offer regular updates, performance tuning, and security monitoring to make sure your site
+                            continues to run smoothly long after launch.
+                        </p>
+                    </div>
+
+                    <div class="service-item">
+                        <h4>Local expertise (Based in Australia)</h4>
+                        <p>
+                            I understand the challenges and needs of Australian businesses. I&apos;ve worked with local
+                            clients like Whittlesea Community Connections.
+                            By working locally, you're getting personalized service and reliable communication.
+                        </p>
+                    </div>
+
+                    <div class="service-item">
+                        <h4>SEO integrated websites</h4>
+                        <p>
+                            Every site is built with clean code, semantic HTML, and best practices in technical SEO—so
+                            your content is easy to find and rank on Google.
+                            This makes your site appear higher on Google searches, and allowing higher traffic to be
+                            directed to your pages.
+                        </p>
+                    </div>
+
+                </div>
+                <a href="services.html" class="primary-button">Learn more</a>
             </div>
-        </div>
-    </header>
-
-    <!-- hero -->
-    <section class="hero">
-        <div class="container">
-            <h2 class="hero-title"></h2>
-        </div>
-        <a href="contact.html" class="primary-button">Let's work together</a>
-    </section>
-
-    <!-- services  -->
-    <section class="services">
-        <div class="container">
-            <div class="marquee">
-            <p class="marquee__content">My services</p> My services
-            </div>
-            <div class="service-grid">
-                <div class="service-item">
-                    <h4>Responsive sites</h4>
-                    <p>
-                        Your website will look great on all devices—from mobile screens to large desktop monitors. 
-                        No matter where your visitors come from, they&apos;ll get the same high-quality, optimized experience.
-                    </p>
-                </div>
-
-                <div class="service-item">
-                    <h4>Custom web design</h4>
-                    <p>
-                        I don&apos;t use cookie-cutter templates like WordPress themes. Every site is hand-coded from scratch, 
-                        which means no bloat, lightning-fast load times, and a truly unique presence for your brand.
-                    </p> <br>
-                    <ul>
-                        <li><img src="./assets/check.svg"> Faster loading times</li><br>
-                        <li><img src="./assets/check.svg"> Better security</li> <br>
-                        <li><img src="./assets/check.svg"> Unique designs</li> <br>
-                        <li><img src="./assets/check.svg"> Improved Google rankings</li> 
-                    </ul>
-                </div>
-
-                <div class="service-item">
-                    <h4>Optimized pages</h4>
-                    <p>
-                        If your website takes more than 3 seconds to load, you could lose up to 50% of your traffic. 
-                        My builds load in under 1 second—keeping visitors engaged and conversions high.
-                    </p>
-                </div>
-
-                <div class="service-item">
-                    <h4>Maintenance and optimization</h4>
-                    <p>
-                        I offer regular updates, performance tuning, and security monitoring to make sure your site continues to run smoothly long after launch.
-                    </p>
-                </div>
-
-                <div class="service-item">
-                    <h4>Local expertise (Based in Australia)</h4>
-                    <p>
-                        I understand the challenges and needs of Australian businesses. I&apos;ve worked with local clients like Whittlesea Community Connections. 
-                        By working locally, you're getting personalized service and reliable communication.
-                    </p>
-                </div>
-
-                <div class="service-item">
-                    <h4>SEO integrated websites</h4>
-                    <p>
-                        Every site is built with clean code, semantic HTML, and best practices in technical SEO—so your content is easy to find and rank on Google.
-                        This makes your site appear higher on Google searches, and allowing higher traffic to be directed to your pages.
-                    </p>
-                </div>
-
-            </div>
-            <a href="services.html" class="primary-button">Learn more</a>
-        </div>
-    </section>
+        </section>
 
     </div>
 
     <div class="bg2-wrapper">
-    <div class="bg2"></div>
-    <!-- projects -->
-    <section class="projects-sample">
-        <div class="container">
-            <h3>Check out my work</h3>
-            <ul class="projects-grid">
-                <li class="p-item">
-                    <div class="p-content">Item 1</div>
-                </li>
-                <li class="p-item">
-                    <div class="p-content">Item 2</div>
-                </li>
-                <li class="p-item">
-                    <div class="p-content">Item 3</div>
-                </li>
-                <li class="p-item">
-                    <div class="p-content">Item 4</div>
-                </li>
-                <li class="p-item">
-                    <div class="p-content">Item 5</div>
-                </li>
-                <li class="p-item">
-                    <div class="p-content">Item 6</div>
-                </li>
-            </ul>
-            <div class="project-button-container">
-                <button class="project-button btn-previous" onclick="handleClick('previous')" type="button">
-                    <img src="./assets/arrow-left.svg" alt="arrow previous">
-                </button>
-                <button class="project-button btn-next" onclick="handleClick('next')" type="button">
-                    <img src="./assets/arrow-right.svg" alt="arrow next">
-                </button>
+        <div class="bg2"></div>
+        <!-- projects -->
+        <section class="projects-sample">
+            <div class="container">
+                <h3>Check out my work</h3>
+                <ul class="projects-grid">
+                    <li class="p-item">
+                        <div class="p-content">
+                            <img src="./images/img-test.jpg" alt="test image">
+                        </div>
+                    </li>
+                    <li class="p-item">
+                        <div class="p-content">
+                            <img src="./images/img-test.jpg" alt="test image">
+                        </div>
+                    </li>
+                    <li class="p-item">
+                        <div class="p-content">
+                            <img src="./images/img-test.jpg" alt="test image">
+                        </div>
+                    </li>
+                    <li class="p-item">
+                        <div class="p-content">
+                            <img src="./images/img-test.jpg" alt="test image">
+                        </div>
+                    </li>
+                    <li class="p-item">
+                        <div class="p-content">
+                            <img src="./images/img-test.jpg" alt="test image">
+                        </div>
+                    </li>
+                    <li class="p-item">
+                        <div class="p-content">
+                            <img src="./images/img-test.jpg" alt="test image">
+                        </div>
+                    </li>
+                </ul>
+                <div class="project-button-container">
+                    <button class="project-button btn-previous" onclick="handleClick('previous')" type="button">
+                        <img src="./assets/arrow-left.svg" alt="arrow previous">
+                    </button>
+                    <button class="project-button btn-next" onclick="handleClick('next')" type="button">
+                        <img src="./assets/arrow-right.svg" alt="arrow next">
+                    </button>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <!-- call to action -->
+        <section class="call-to-action">
+            <div class="container">
+                <h2 class="cta-title">Ready to bring your ideas to life?</h2>
+                <p class="cta-description">
+                    Let's get in touch and create something that makes you stand out. <br>
+                    Drop me a message about any questions or ideas you have.
+                </p>
+                <a href="contact.html" class="primary-button">Contact me</a>
+            </div>
+        </section>
+    </div>
 
-    <!-- call to action -->
-    <section class="call-to-action">
-        <div class="container">
-            <h2 class="cta-title">Ready to bring your ideas to life?</h2>
-            <p class="cta-description">
-                Let's get in touch and create something that makes you stand out. <br>
-                Drop me a message about any questions or ideas you have.
-            </p>
-            <a href="contact.html" class="primary-button">Contact me</a>
-        </div>
-    </section>
-</div>
     <!-- footer -->
     <footer>
         <div class="footer-container">

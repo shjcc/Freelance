@@ -4,7 +4,6 @@ section {
 
 /* hero start */
 .hero {
-
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -183,9 +182,9 @@ li>img {
 
 .p-item {
     flex-shrink: 0;
-    width: 70%; 
-    height: 70vh; 
-    background-color: gray;
+    width: auto; 
+    height: auto; 
+    background-color: var(--color-cream);
     scroll-snap-align: center;
     border-radius: 1rem;
     overflow: hidden;

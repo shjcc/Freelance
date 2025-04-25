@@ -52,19 +52,6 @@
     margin-top: 0;
 }
 
-.contact-title>p:nth-child(3) {
-    font-size: 2rem;
-    font-family: var(--font-primary);
-    font-weight: 300;
-    display: inline;
-}
-
-.contact-title>img {
-    width: 30px;
-    height: 30px;
-    object-fit: contain;
-}
-
 #contact-form {
     flex: 1;
     animation: fadeLeft 2s ease;
@@ -156,6 +143,7 @@ input[type="submit"]:hover {
 
     .contact-title {
         font-size: 3em;
+        margin: 0;
     }
 
     .contact-title>p:nth-child(3) {
@@ -198,6 +186,8 @@ input[type="submit"]:hover {
 
     .contact-title {
         font-size: 1rem;
+        margin-right: 2rem;
+
     }
 
     .contact-title>p:nth-child(3) {
