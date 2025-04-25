@@ -13,10 +13,62 @@
     align-items: flex-start;
     margin-top: 0;
     margin-left: 2rem;
+    animation: fadeUp 1s ease;
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fadeLeft {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+.contact-title>p:nth-child(1) {
+    flex: 1.2;
+    font-size: clamp(2rem, 10vw, 6rem);
+    font-family: var(--font-secondary);
+    font-weight: 800;
+    text-transform: uppercase;
+    text-wrap: balance;
+    align-items: flex-start;
+    margin-top: 0;
+}
+
+.contact-title>p:nth-child(3) {
+    font-size: 2rem;
+    font-family: var(--font-primary);
+    font-weight: 300;
+    display: inline;
+}
+
+.contact-title>img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
 }
 
 #contact-form {
     flex: 1;
+    animation: fadeLeft 2s ease;
+
 }
 
 .contact-item {
@@ -86,7 +138,8 @@ input[type="submit"] {
     background-color: var(--color-black);
     transition: .1s ease-in-out;
     border-radius: 0.5rem;
-    align-self: flex-start;
+    margin-right: 2rem;
+    align-self: flex-end;
     text-transform: uppercase;
 }
 input[type="submit"]:hover {
@@ -103,6 +156,19 @@ input[type="submit"]:hover {
 
     .contact-title {
         font-size: 3em;
+    }
+
+    .contact-title>p:nth-child(3) {
+        display: flex;
+        justify-self: flex-end;
+        font-size: 1rem;
+    }
+    
+    .contact-title>img {
+        display: flex;
+        justify-self: flex-end;
+        width: 10px;
+        height: 10px;
     }
 
     .contact-item {
@@ -131,6 +197,19 @@ input[type="submit"]:hover {
     }
 
     .contact-title {
-        font-size: 4rem;
+        font-size: 1rem;
+    }
+
+    .contact-title>p:nth-child(3) {
+        display: flex;
+        justify-self: flex-start;
+        font-size: 2rem;
+    }
+    
+    .contact-title>img {
+        display: flex;
+        justify-self: flex-start;
+        width: 20px;
+        height: 20px;
     }
 }
