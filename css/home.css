@@ -77,10 +77,7 @@ section {
     justify-content: space-around;
     min-width: 100%;
     gap: var(--gap);
-    animation: scroll 10s linear infinite;
     font-size: clamp(4rem, 10vw, 7rem);
-    list-style: none;
-    color: var(--color-black);
 }
 
 .service-grid {
@@ -290,18 +287,3 @@ li>img {
 }
 
 /* call to action end */
-
-
-/* animations start */
-@keyframes scroll {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(calc(-100% - var(--gap)));
-    }
-}
-
-/* animations end */
-
