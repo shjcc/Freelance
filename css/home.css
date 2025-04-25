@@ -47,7 +47,6 @@ section {
         visibility: visible;
     }
 }
-
 /* hero end */
 
 /* services start */
@@ -125,24 +124,24 @@ section {
 
 .service-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
     column-gap: 20%;
     row-gap: 4rem;
-    padding: 2em 2em;
+    padding: 2em;
 }
 
 .service-item {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Ensures the container is centered */
-    justify-content: center; /* Ensures the content is vertically centered */
+    align-items: center;
+    justify-content: flex-start; 
     background: rgba(255, 255, 255, 0.578);
     font-size: clamp(1rem, 1.2vw, 1.25rem);
     padding: 2em;
     border-radius: 1rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transition: all 0.3s ease;
-    text-align: center; /* Centers the title and the text container */
+    text-align: center;
 }
 
 .service-item {
@@ -168,16 +167,9 @@ section {
     color: var(--color-black);
     margin-bottom: 2rem;
     text-align: center;
-}
-
-.service-item>h4::after {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 2px;
-    margin: 1rem auto 0;
-    background-color: var(--color-black);
-    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    width: 80%;
 }
 
 .service-item > p {
@@ -198,8 +190,6 @@ section {
     margin-top: 2rem;
     width: 12rem;
 }
-
-
 /* services end */
 
 /* projects start */
@@ -339,3 +329,11 @@ section {
 }
 
 /* call to action end */
+
+/* larger screens */
+@media (min-width: 1200px) {
+    .service-grid {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 3rem;
+    }
+}

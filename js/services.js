@@ -1,3 +1,9 @@
+window.onload = function () {
+    const title = document.querySelector(".services-title");
+    const subtitle = document.querySelector(".services-subtitle");
+    title.classList.add("fade-up");
+};
+
 document.addEventListener("DOMContentLoaded", () => {
     const serviceTitle = document.querySelector(".section-title");
     const serviceSubtitle = document.querySelector(".section-subtitle");
