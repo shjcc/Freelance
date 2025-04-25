@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const aboutItems = document.querySelectorAll(".about-item");
 
     const observerOptions = {
-        threshold: 1,
+        threshold: .1,
     };
 
     const observer = new IntersectionObserver((entries) => {
