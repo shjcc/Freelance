@@ -39,6 +39,34 @@ function handleClick(direction) {
   }
 }
 
+// animate service title 
+document.addEventListener("DOMContentLoaded", () => {
+  const serviceTitleWrapper = document.querySelector(".service-title-wrapper");
+  const serviceCards = document.querySelectorAll(".service-item");
+
+  const observerOptions = {
+    threshold: .1,
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      } else {
+        entry.target.classList.remove("visible");
+      }
+    });
+  }, observerOptions);
+
+  observer.observe(serviceTitleWrapper);
+
+  serviceCards.forEach((item, index) => {
+    item.style.transitionDelay = `${index * 0.1}s`;
+    observer.observe(item);
+  });
+});
+
+
 
 // var $container = $('.bg2-wrapper');
 // var $drone = $('.bg2');

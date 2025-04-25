@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const aboutItems = document.querySelectorAll(".about-item");
 
     const observerOptions = {
-        threshold: 0.3,
+        threshold: 1,
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const skillsTitle = document.querySelector(".skills-title");
 
     const observerOptions = {
-        threshold: 0.3,
+        threshold: 1,
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -54,4 +54,3 @@ document.addEventListener("DOMContentLoaded", () => {
         observer.observe(item);
     });
 });
-

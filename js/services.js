@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const serviceCard = document.querySelectorAll(".service-card");
 
     const observerOptions = {
-        threshold: 0.3, 
+        threshold: 1, 
     };
 
     const observer = new IntersectionObserver((entries) => {
