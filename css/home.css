@@ -106,6 +106,7 @@ section {
 .service-item>h4 {
     font-family: var(--font-primary);
     font-weight: 800;
+    font-size: 1.2em;
     color: var(--color-black);
     margin-bottom: 2rem;
     text-align: center;
@@ -124,7 +125,22 @@ section {
 .service-item>p {
     font-family: var(--font-primary);
     font-weight: 400;
+    line-height: 1.5em;
     color: var(--color-black);
+    text-wrap: balance;
+}
+
+.service-item>ul>li {
+    font-family: var(--font-primary);
+    font-weight: 400;
+    list-style: none;
+    text-align: left;
+}
+
+li>img {
+    height: 1em;
+    width: 1em;
+    object-fit: contain;
 }
 
 .services>.container>.primary-button {
@@ -133,13 +149,8 @@ section {
     text-align: center;
     margin-top: 2rem;
     width: 12rem;
-    color: var(--color-white);
-    background-color: var(--color-black);
 }
 
-.services>.container>.primary-button:hover {
-    transform: scale(1.05);
-}
 
 /* services end */
 
