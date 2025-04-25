@@ -82,6 +82,7 @@ section {
     position: relative;
     margin: 0;
     background: linear-gradient(90deg, #000, #444);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: opacity 1s ease, transform 1s ease;
