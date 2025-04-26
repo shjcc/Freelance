@@ -240,6 +240,12 @@ section {
     font-size: 3rem;
 }
 
+.p-content>img {
+    height: 500px;
+    width: auto;
+    object-fit: contain;
+}
+
 .project-button-container {
     position: absolute;
     top: 90%;
