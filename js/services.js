@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     setTimeout(() => {
         serviceCard.forEach((item, index) => {
-            item.style.transitionDelay = `${index * 0.2}s`; 
+            item.style.transitionDelay = `${index * 0.1}s`; 
             observer.observe(item);
         });
     }, 1000);  

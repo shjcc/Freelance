@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }, observerOptions);
 
     aboutItems.forEach((item, index) => {
-        item.style.transitionDelay = `${index * 0.2}s`;
+        item.style.transitionDelay = `${index * 0.1}s`;
         observer.observe(item);
     });
 });
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // animate skills-grid section
 document.addEventListener("DOMContentLoaded", () => {
     const skillsItems = document.querySelectorAll(".skills-item");
-    const skillsTitle = document.querySelector(".skills-title");
+    // const skillsTitle = document.querySelector(".skills-title");
 
     const observerOptions = {
         threshold: 1,
@@ -47,10 +47,10 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }, observerOptions);
 
-    observer.observe(skillsTitle);
+    // observer.observe(skillsTitle);
 
     skillsItems.forEach((item, index) => {
-        item.style.transitionDelay = `${index * 0.2}s`;
+        item.style.transitionDelay = `${index * .05}s`;
         observer.observe(item);
     });
 });
