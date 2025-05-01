@@ -2,7 +2,6 @@
 
 html {
   scroll-behavior: smooth !important;
-
 }
 
 body {
@@ -17,7 +16,6 @@ body {
 *::before,
 *::after {
   box-sizing: border-box;
-
 }
 
 :root {
@@ -28,14 +26,12 @@ body {
   --color-white: rgb(244, 243, 242);
   --color-cream: rgb(238, 226, 223);
   --color-green: rgb(34, 139, 120);
-
 }
 
 img {
   max-width: 100%;
   height: auto;
 }
-
 
 .bg-wrapper {
   position: relative;
@@ -68,4 +64,3 @@ img {
   z-index: -1;
   pointer-events: none;
 }
-
