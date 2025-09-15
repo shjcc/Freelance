@@ -76,6 +76,7 @@ section {
 }
 
 .service-title {
+    font-weight: 600;
     font-family: var(--font-secondary);
     font-size: clamp(3rem, 6vw, 6rem);
     letter-spacing: 0.5rem;
@@ -91,7 +92,7 @@ section {
 }
 
 .service-subtitle:first-of-type {
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .service-subtitle {
