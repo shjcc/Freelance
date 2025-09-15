@@ -68,7 +68,7 @@ section {
     transform: translateY(-20px);
     transition: opacity 1s ease, transform 1s ease;
     z-index: 2;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
 }
 
 .service-title-wrapper.visible {
@@ -201,7 +201,7 @@ section {
 }
 
 .projects > .container > h3 {
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.3rem;
     font-weight: 600;
     font-family: var(--font-secondary);
     font-size: clamp(3rem, 6vw, 6rem);
@@ -209,6 +209,7 @@ section {
     position: relative;
     margin: 0;
     padding-bottom: 2rem;
+    text-align: center;
 }
 
 .projects-grid {
@@ -216,16 +217,16 @@ section {
     flex-direction: column;
 }
 
-.projects-item {
+.p-item {
     width: 800px;
     padding: 4rem;
 }
 
-.projects-item:last-child {
+.p-item:last-child {
     align-self: flex-end;
 }
 
-.projects-content > p {
+.p-content > p {
     font-family: var(--font-primary);
     font-weight: 400;
     font-size: clamp(1rem, 2vw, 1.5rem);

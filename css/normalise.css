@@ -60,7 +60,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle, rgba(193, 30, 222, 0.4) 10%, rgba(238, 226, 223, 1) 80%);
+  background: radial-gradient(circle, rgba(165, 216, 255, 0.4) 10%, rgba(238, 226, 223, 1) 80%);
   z-index: -1;
   pointer-events: none;
 }
