@@ -8,15 +8,19 @@ function runTyping() {
       setTimeout(runTyping, 500);
     },
   })
-    .type("Hello!", { delay: 800 })
-    .delete(null, { delay: 500 })
-    .type("I am a Web")
-    .move(null, { to: "END" })
-    .type(' <span class="place">Developer</span>.', { delay: 800 })
-    .move(-10, { delay: 350 })
-    .move(11, { delay: 350 })
+    .type("Custom ")
+    .type(' <span class="place">websites</span>.', { delay: 800 })
     .delete(".place", { delay: 800 })
-    .type('<em> Designer.</em>', {
+    .type('<em> code.</em>', {
+      speed: 100,
+      delay: 800,
+    })
+    .delete(null, {delay: 800})
+    .type("Web ")
+    .move(null, { to: "END" })
+    .type(' <span class="place">Development</span>.', { delay: 800 })
+    .delete(".place", { delay: 800 })
+    .type('<em> Design.</em>', {
       speed: 100,
       delay: 800,
     })

@@ -22,7 +22,7 @@ section {
 .hero-title {
     font-family: var(--font-secondary);
     letter-spacing: -0.25rem;
-    font-weight: 300;
+    font-weight: 600;
     font-size: clamp(4rem, 10vw, 7rem);
     color: var(--color-black);
     margin-bottom: 4rem;
@@ -30,8 +30,9 @@ section {
 }
 
 .hero>.primary-button {
+    font-weight: 700;
     animation: fadeIn 1s ease-in-out forwards;
-    animation-delay: 12s;
+    animation-delay: 14s;
     opacity: 0;
     visibility: hidden;
 }
