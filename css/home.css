@@ -310,9 +310,9 @@ section {
 
 .cta-description {
     font-family: var(--font-primary);
-    font-weight: 400;
+    font-weight: 500;
     font-size: clamp(1rem, 2vw, 1.5rem);
-    letter-spacing: .05rem;
+    letter-spacing: -.05rem;
     color: var(--color-black);
     text-align: left;
     margin-bottom: 3rem;
