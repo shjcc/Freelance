@@ -32,7 +32,7 @@ section {
 .hero>.primary-button {
     font-weight: 700;
     animation: fadeIn 1s ease-in-out forwards;
-    animation-delay: 14s;
+    animation-delay: 2s;
     opacity: 0;
     visibility: hidden;
 }
@@ -78,7 +78,7 @@ section {
 
 .service-title {
     font-weight: 600;
-    font-family: var(--font-secondary);
+    font-family: var(--font-primary);
     font-size: clamp(3rem, 6vw, 6rem);
     letter-spacing: 0.5rem;
     color: var(--color-black);
@@ -197,52 +197,54 @@ section {
 
 /* projects start */
 .projects {
-    padding: 4rem;
+    margin-top: 4rem;
+    padding: 2rem;
 }
 
 .projects > .container > h3 {
-    letter-spacing: 0.3rem;
     font-weight: 600;
-    font-family: var(--font-secondary);
+    font-family: var(--font-primary);
     font-size: clamp(3rem, 6vw, 6rem);
+    letter-spacing: -0.2rem;
     color: var(--color-black);
     position: relative;
     margin: 0;
     padding-bottom: 2rem;
-    text-align: center;
+    background: linear-gradient(90deg, #000, #444);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-wrap: balance;
 }
 
 .projects-grid {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .p-item {
-    width: 800px;
-    padding: 4rem;
-}
-
-.p-item:last-child {
-    align-self: flex-end;
+    width: 400px;
+    flex-basis: calc(50% - 30px); 
+    margin: 10px;
 }
 
 .p-content > p {
     font-family: var(--font-primary);
-    font-weight: 400;
-    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-weight: 500;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
     letter-spacing: -.05rem;
     color: var(--color-black);
+    text-align: left;
+    margin-bottom: 3rem;
     text-wrap: balance;
-    text-wrap: pretty;
 }
 
 img {
     display: block;
     width: 100%;
     height: auto;
-    border-radius: 1rem;
 }
-
 /* projects end */
 
 /* call to action start */
@@ -276,6 +278,7 @@ img {
     margin-bottom: 3rem;
     line-height: 2.6vw;
     text-wrap: balance;
+    text-wrap: pretty;
     text-align: center;
 }
 
