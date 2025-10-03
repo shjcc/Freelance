@@ -286,7 +286,7 @@ section {
 .p-content > p {
     font-family: var(--font-primary);
     font-weight: 500;
-    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    font-size: clamp(1rem, 2vw, 1.5rem);
     letter-spacing: -.05rem;
     color: var(--color-black);
     text-align: left;
