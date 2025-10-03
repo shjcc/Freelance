@@ -136,6 +136,14 @@ section {
     gap: 4rem;
 }
 
+.service-icon {
+    width: 4rem;
+    height: 4rem;
+    object-fit: contain;
+    margin: 0 auto 0 auto;
+    display: block;
+}
+
 .service-item {
     background: rgba(255, 255, 255, 0.7);
     border: 1px solid rgba(255, 255, 255, 0.25);
@@ -195,6 +203,52 @@ section {
 }
 /* services end */
 
+/* testimonials start */
+.testimonials {
+    padding: 4rem;
+}
+
+.testimonials .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonials-title {
+    font-size: 2rem;
+    font-family: var(--font-secondary);
+    letter-spacing: 0.5rem;
+    color: var(--color-black);
+    background: linear-gradient(90deg, #000, #444);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    align-self: flex-start;
+}
+
+.testimonials-grid {
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.testimonial-text {
+    font-family: var(--font-primary);
+    font-size: clamp(1rem, 3vw, 3rem);
+    float: left;
+    color: var(--color-black);
+    background: linear-gradient(90deg, #000, #444);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-wrap: balance;
+}
+
+.testimonial-author {
+    font-family: var(--font-primary);
+    justify-self: flex-end;
+}
+/* testimonials end */
+
 /* projects start */
 .projects {
     margin-top: 4rem;
@@ -238,12 +292,14 @@ section {
     text-align: left;
     margin-bottom: 3rem;
     text-wrap: balance;
+    opacity: .7;
 }
 
 img {
     display: block;
     width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 /* projects end */
 

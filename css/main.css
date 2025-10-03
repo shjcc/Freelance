@@ -34,7 +34,7 @@
     font-family: var(--font-primary);
     font-weight: 800;
     text-transform: uppercase;
-    color: var(--color-white);
+    color: var(--color-cream);
     font-size: 0.8rem;
     font-weight: 400;
     margin: 0;
@@ -42,7 +42,7 @@
 }
 
 .footer-container span {
-    color: var(--color-cream);
+    color: var(--color-white);
 }
 
 /* footer end */

@@ -125,49 +125,6 @@ h4::after {
     transform: translateY(0);
 }
 
-.testimonials {
-    padding: 4rem;
-}
-
-.testimonials .container {
-    display: flex;
-    flex-direction: column;
-}
-
-.testimonials-title {
-    font-size: 2rem;
-    font-family: var(--font-secondary);
-    letter-spacing: 0.5rem;
-    color: var(--color-black);
-    background: linear-gradient(90deg, #000, #444);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    align-self: flex-start;
-}
-
-.testimonials-grid {
-    width: 60%;
-    margin: 0 auto;
-    position: relative;
-}
-
-.testimonial-text {
-    font-family: var(--font-primary);
-    font-size: 2.4rem;
-    float: left;
-    color: var(--color-black);
-    background: linear-gradient(90deg, #000, #444);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.testimonial-author {
-    font-family: var(--font-primary);
-    justify-self: flex-end;
-}
-
 .skills {
     padding: 4rem 10rem;
 }
@@ -339,41 +296,6 @@ h4::after {
         font-size: 0.95rem;
     }
 
-    .testimonials {
-        padding: 2rem 1rem;
-    }
-
-    .testimonials .container {
-        align-items: center;
-    }
-
-    .testimonials-title {
-        font-size: 1.5rem;
-        letter-spacing: 0.2rem;
-        text-align: center;
-        align-self: center;
-    }
-
-    .testimonials-grid {
-        width: 100%;
-        left: 0;
-        float: none;
-        position: relative;
-    }
-
-    .testimonial-text {
-        font-size: 1.4rem;
-        padding-bottom: 1rem;
-        left: 0;
-        float: none;
-        text-align: center;
-    }
-
-    .testimonial-author {
-        text-align: center;
-        font-size: 1rem;
-    }
-
     .skills {
         padding: 2rem 1rem 6rem;
     }
@@ -452,38 +374,6 @@ h4::after {
 
     .about-item p {
         font-size: 1.05rem;
-    }
-
-    .testimonials {
-        padding: 3rem 2rem;
-    }
-
-    .testimonials-title {
-        font-size: 1.8rem;
-        letter-spacing: 0.3rem;
-        text-align: center;
-        align-self: center;
-    }
-
-    .testimonials-grid {
-        width: 80%;
-        left: 0;
-        float: none;
-        position: relative;
-        margin: 0 auto;
-    }
-
-    .testimonial-text {
-        font-size: 1.8rem;
-        padding-bottom: 1.5rem;
-        text-align: center;
-        left: 0;
-        float: none;
-    }
-
-    .testimonial-author {
-        text-align: center;
-        font-size: 1.1rem;
     }
 
     .skills {
