@@ -339,11 +339,12 @@ img {
 }
 
 .cta-title {
-    font-family: var(--font-secondary);
+    font-family: var(--font-primary);
     letter-spacing: .2rem;
     font-size: clamp(2rem, 5vw, 3.5rem);
     color: var(--color-black);
     text-wrap: balance;
+    opacity: 0.8;
 }
 
 .cta-description {
@@ -357,6 +358,7 @@ img {
     line-height: 2.6vw;
     text-wrap: balance;
     text-wrap: pretty;
+    opacity: 0.7;
 }
 
 /* call to action end */
