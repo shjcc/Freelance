@@ -20,10 +20,10 @@ section {
 }
 
 .hero-title {
-    font-family: var(--font-secondary);
+    font-family: var(--font-primary);
     letter-spacing: -0.25rem;
     font-weight: 600;
-    font-size: clamp(4rem, 10vw, 7rem);
+    font-size: clamp(3rem, 5vw, 5rem);
     color: var(--color-black);
     margin-bottom: 4rem;
     z-index: 1;
@@ -79,7 +79,7 @@ section {
 .service-title {
     font-weight: 600;
     font-family: var(--font-primary);
-    font-size: clamp(3rem, 6vw, 6rem);
+    font-size: clamp(3rem, 5vw, 5rem);
     letter-spacing: 0.5rem;
     color: var(--color-black);
     position: relative;
@@ -212,52 +212,6 @@ section {
 }
 /* services end */
 
-/* testimonials start */
-.testimonials {
-    padding: 4rem;
-}
-
-.testimonials .container {
-    display: flex;
-    flex-direction: column;
-}
-
-.testimonials-title {
-    font-size: 2rem;
-    font-family: var(--font-secondary);
-    letter-spacing: 0.5rem;
-    color: var(--color-black);
-    background: linear-gradient(90deg, #000, #444);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    align-self: flex-start;
-}
-
-.testimonials-grid {
-    width: 60%;
-    margin: 0 auto;
-    position: relative;
-}
-
-.testimonial-text {
-    font-family: var(--font-primary);
-    font-size: clamp(1rem, 3vw, 3rem);
-    float: left;
-    color: var(--color-black);
-    background: linear-gradient(90deg, #000, #444);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-wrap: balance;
-}
-
-.testimonial-author {
-    font-family: var(--font-primary);
-    justify-self: flex-end;
-}
-/* testimonials end */
-
 /* projects start */
 .projects {
     margin-top: 4rem;
@@ -267,12 +221,12 @@ section {
 .projects > .container > h3 {
     font-weight: 600;
     font-family: var(--font-primary);
-    font-size: clamp(3rem, 6vw, 6rem);
-    letter-spacing: -0.2rem;
-    color: var(--color-black);
+    font-size: clamp(3rem, 5vw, 5rem);
     position: relative;
     margin: 0;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
+    letter-spacing: 0.5rem;
+    color: var(--color-black);
     background: linear-gradient(90deg, #000, #444);
     background-clip: text;
     -webkit-background-clip: text;
@@ -302,6 +256,7 @@ section {
     margin-bottom: 3rem;
     text-wrap: balance;
     opacity: .7;
+    transition: all 0.3s;
 }
 
 img {
@@ -309,20 +264,78 @@ img {
     width: 100%;
     height: auto;
     border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.p-content > img:hover {
+    transform: scale(1.05);
+}
+
+.p-item:hover p {
+    opacity: 1;
 }
 /* projects end */
+
+/* testimonials start */
+.testimonials {
+    padding: 4rem;
+}
+
+.testimonials .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonials-title {
+    font-weight: 600;
+    font-family: var(--font-primary);
+    font-size: clamp(3rem, 5vw, 5rem);
+    letter-spacing: 0.5rem;
+    color: var(--color-black);
+    background: linear-gradient(90deg, #000, #444);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    align-self: flex-start;
+}
+
+.testimonials-grid {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.testimonial-text {
+    font-family: var(--font-primary);
+    font-size: clamp(1rem, 3vw, 3rem);
+    float: left;
+    color: var(--color-black);
+    background: linear-gradient(90deg, #000, #444);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-wrap: balance;
+}
+
+.testimonial-author {
+    font-family: var(--font-primary);
+    font-size: clamp(1rem, 2vw, 2rem);
+    justify-self: flex-end;
+}
+/* testimonials end */
 
 /* call to action start */
 .call-to-action {
     margin-top: 4rem;
     padding: 4rem;
+    display: inline-block;
 }
 
 .call-to-action .container {
     max-width: 960px;
     margin: 0 auto;
     padding: 4rem 2rem 4rem 2rem;
-    text-align: center;
+    text-align: left;
 }
 
 .cta-title {
@@ -344,7 +357,6 @@ img {
     line-height: 2.6vw;
     text-wrap: balance;
     text-wrap: pretty;
-    text-align: center;
 }
 
 /* call to action end */
