@@ -309,8 +309,7 @@ img {
     font-family: var(--font-primary);
     font-size: clamp(1rem, 3vw, 2rem);
     float: left;
-    color: var(--color-black);
-    font-weight: 600;
+    font-weight: 400;
     background: linear-gradient(90deg, #000, #444);
     background-clip: text;
     -webkit-background-clip: text;
@@ -320,12 +319,21 @@ img {
     opacity: .7;
 }
 
+.testimonial-span{
+    background: none;
+    background-clip: text;
+    -webkit-background-clip: initial;
+    -webkit-text-fill-color: var(--color-green);
+    color: var(--color-green);
+    font-weight: 500;
+}
+
 .testimonial-author {
     font-family: var(--font-primary);
     font-size: clamp(1rem, 2vw, 2rem);
     justify-self: flex-end;
     opacity: .6;
-    font-weight: 700;
+    font-weight: 600;
 }
 /* testimonials end */
 

@@ -28,7 +28,8 @@
 }
 
 .proxy {
-    font-weight: 900;
+    color: var(--color-green);
+    font-weight: 800;
     transition: all 0.3s ease;
 }
 
@@ -142,7 +143,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: transform .6s, oppacity .8s, top .6s;
+    transition: transform .6s, opacity .8s, top .6s;
 }
 
 .menu-top {
