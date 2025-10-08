@@ -338,7 +338,6 @@ img {
 
 .cta-title {
     font-family: var(--font-primary);
-    letter-spacing: .2rem;
     font-size: clamp(2rem, 5vw, 3.5rem);
     color: var(--color-black);
     text-wrap: balance;

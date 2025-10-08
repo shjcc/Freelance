@@ -37,6 +37,10 @@
         text-wrap: pretty;
     }
 
+    .projects {
+        padding: 2rem 1rem; 
+    }
+
 
     .projects > .container > h3 {
         text-align: left;
@@ -49,7 +53,6 @@
 
     .p-item {
         width: 100%;
-        max-width: 100%; 
         margin: 10px 0;
     }
 
@@ -88,7 +91,7 @@
     }
 
     .cta-description {
-        line-height: 1.8rem;
+        line-height: 1.5;
     }
 
 }
