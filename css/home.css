@@ -310,13 +310,14 @@ img {
     font-size: clamp(1rem, 3vw, 2rem);
     float: left;
     color: var(--color-black);
+    font-weight: 600;
     background: linear-gradient(90deg, #000, #444);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-wrap: balance;
     text-wrap: pretty;
-    opacity: .87;
+    opacity: .7;
 }
 
 .testimonial-author {
@@ -324,6 +325,7 @@ img {
     font-size: clamp(1rem, 2vw, 2rem);
     justify-self: flex-end;
     opacity: .6;
+    font-weight: 700;
 }
 /* testimonials end */
 
