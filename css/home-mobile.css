@@ -57,7 +57,7 @@
     }
 
     .testimonials {
-        padding: 4rem;
+        padding: 4rem 1rem;
     }
 
     .testimonials .container {
@@ -76,14 +76,18 @@
     }
 
     .testimonial-text {
+        padding: 1rem;
         padding-bottom: 1rem;
         left: 0;
         float: none;
+        text-wrap: balance;
+        text-wrap: pretty;
     }
 
     .testimonial-author {
         text-align: center;
         font-size: 1rem;
+        padding: 1rem;
     }
 
     .call-to-action {
