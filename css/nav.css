@@ -27,8 +27,17 @@
     text-decoration: none;
 }
 
+.proxy {
+    font-weight: 900;
+    transition: all 0.3s ease;
+}
+
 .logo a:hover {
     font-weight: 900;
+}
+
+.logo a:hover .proxy {
+    font-weight: 600;
 }
 
 .nav-center {

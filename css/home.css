@@ -231,6 +231,7 @@ section {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-wrap: balance;
+    opacity: .87;
 }
 
 .projects-grid {
@@ -295,6 +296,7 @@ img {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     align-self: flex-start;
+    opacity: .87;
 }
 
 .testimonials-grid {
@@ -305,7 +307,7 @@ img {
 
 .testimonial-text {
     font-family: var(--font-primary);
-    font-size: clamp(1rem, 3vw, 3rem);
+    font-size: clamp(1rem, 3vw, 2rem);
     float: left;
     color: var(--color-black);
     background: linear-gradient(90deg, #000, #444);
@@ -313,12 +315,14 @@ img {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-wrap: balance;
+    opacity: .7;
 }
 
 .testimonial-author {
     font-family: var(--font-primary);
     font-size: clamp(1rem, 2vw, 2rem);
     justify-self: flex-end;
+    opacity: .6;
 }
 /* testimonials end */
 
@@ -340,6 +344,10 @@ img {
     font-family: var(--font-primary);
     font-size: clamp(2rem, 5vw, 3.5rem);
     color: var(--color-black);
+    background: linear-gradient(90deg, #000, #444);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-wrap: balance;
     opacity: 0.87;
 }
@@ -349,6 +357,7 @@ img {
     font-weight: 500;
     font-size: clamp(1rem, 2vw, 1.5rem);
     letter-spacing: -.05rem;
+    max-width: 500px;
     color: var(--color-black);
     text-align: left;
     margin-bottom: 3rem;
