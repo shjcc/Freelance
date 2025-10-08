@@ -75,7 +75,7 @@ body {
 
 .about-main>h4 {
     font-family: var(--font-primary);
-    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-size: clamp(1.5rem, 2vw, 1.5rem);
     color: var(--color-green);
     text-transform: uppercase;
     font-weight: 800;
@@ -83,7 +83,7 @@ body {
 
 
 .about-main>h3 {
-    font-size: clamp(1rem, 1.5vw, 1rem);
+    font-size: clamp(1.2rem, 1.5vw, 1rem);
     color: var(--color-black);
     font-family: var(--font-secondary);
     opacity: 0.6;
@@ -102,7 +102,7 @@ body {
 
 .about-header>h4 {
     font-family: var(--font-primary);
-    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-size: clamp(1.5rem, 2vw, 1.5rem);
     color: var(--color-green);
     text-transform: uppercase;
     text-align: center;
@@ -110,7 +110,7 @@ body {
 }
 
 .about-header>p {
-    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-size: clamp(1.3rem, 2vw, 1.5rem);
     color: var(--color-black);
     font-family: var(--font-secondary);
     text-align: center;
@@ -119,13 +119,13 @@ body {
 
 .about-item>h4 {
     font-family: var(--font-secondary);
-    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-size: clamp(1.5rem, 2vw, 1.5rem);
     color: var(--color-green);
     text-transform: uppercase;
 }
 
 .about-item>h3 {
-    font-size: clamp(1rem, 1.5vw, 1rem);
+    font-size: clamp(1.2rem, 1.5vw, 1rem);
     color: var(--color-black);
     font-family: var(--font-secondary);
     opacity: 0.6;
