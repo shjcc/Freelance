@@ -47,6 +47,7 @@ body {
 
 .fade-description:nth-child(3) {
     animation-delay: 1.5s;
+    padding-bottom: 4rem;
 }
 
 .about-grid {
@@ -77,12 +78,10 @@ body {
 
 .about-item { 
     grid-row: 3; 
-    border-radius: 10px;
-    background: rgba(255, 255, 255, 0.556);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    border-radius: 1rem;
     padding: 2rem;
+    background: #d4d0db;
+    border-radius: 10px;
+
 }
 
 .about-main>h4 {
@@ -122,11 +121,6 @@ body {
 }
 
 .about-header {
-    border-radius: 10px;
-    background: rgba(255, 255, 255, 0.556);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    border-radius: 1rem;
     padding: 2rem;
 }
 
@@ -141,15 +135,24 @@ body {
 .about-item>h4 {
     font-family: var(--font-primary);
     font-size: clamp(1.5rem, 2vw, 1.5rem);
-    color: var(--color-green);
+    width: 4rem;
+    height: 4rem;
+    margin: 0 auto 1rem;
+    color: var(--color-white);
     text-transform: uppercase;
+    text-align: center;
+    background: var(--color-green);
+    border-radius: 50%;
+    line-height: 2.5;
+    opacity: 0.87;
+
 }
 
 .about-item>h3 {
     font-size: clamp(1.2rem, 1.5vw, 1rem);
     color: var(--color-black);
     font-family: var(--font-primary);
-    opacity: 0.6;
+    text-align: center;
     padding-bottom: 2rem;
 }
 
@@ -159,6 +162,7 @@ body {
     color: var(--color-black);
     line-height: 1.5;
     text-wrap: balance;
+    text-align: center;
     text-wrap: pretty;
     font-family: var(--font-primary);
 }
