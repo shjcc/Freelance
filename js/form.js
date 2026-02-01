@@ -1,7 +1,7 @@
 // contact form validation/submission
 window.onload = function () {
     emailjs.init({
-      publicKey: "cn8V8gjTY22xvh7_-",
+      publicKey: "HdvBc2pWqIX3HddeG",
     });
   
     const form = document.getElementById('contact-form');
@@ -11,7 +11,7 @@ window.onload = function () {
 async function send_email(event) {
     event.preventDefault(); 
     try {
-      await emailjs.sendForm('service_n1wrsw4', 'template_4pg2qd7', event.target);
+      await emailjs.sendForm('service_752m2gc', 'template_ucy59cm', event.target);
       alert('email sent.');
       event.target.reset(); 
     } catch (error) {
