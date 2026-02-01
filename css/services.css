@@ -6,7 +6,6 @@
 .services-section {
     padding: 6rem 1.25rem;
     padding-top: 1rem;
-    margin-bottom: 8rem;
 }
 
 .container {
@@ -30,7 +29,7 @@
 
 .section-subtitle {
     font-family: var(--font-primary);
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     text-align: center;
     margin-bottom: 3.75rem;
     color: var(--color-black);
@@ -46,11 +45,6 @@
     animation: fadeUp 1s ease-in-out forwards;
 }
 
-.service-card.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
@@ -62,12 +56,25 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border: 1px solid rgba(255, 255, 255, 0.25);
     border-radius: 1rem;
-    padding: 1.8rem 1.5rem;
+    padding: 1.8rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
     opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
+    visibility: hidden;
+    animation: fadeIn 1s ease-in-out forwards;
+    transition: all .2s ease-in-out;
+    animation-delay: 1.5s;
+}
+
+.service-card:hover {
+    background: rgba(34, 139, 120, 0.6);
+    transition: all .2s ease-in-out;
+    transform: translateY(-10px);
+    border-radius: 1.5rem;
+}
+
+.service-card:nth-child(n+4) {
+    animation-delay: 2s;
 }
 
 .service-card .skills-icon {
@@ -97,6 +104,12 @@
     text-wrap: balance;
 }
 
+.contact-ctnr {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4rem;
+}
+
 @keyframes fadeUp {
     0% {
         opacity: 0;
@@ -113,8 +126,6 @@
 
 /* mobile */
 @media (max-width: 600px) {
-
-
     .services-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -128,4 +139,22 @@
 }
 
 /* tablet */
-@media (min-width: 601px) and (max-width: 1024px) {}
+@media (min-width: 601px) and (max-width: 1024px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2rem 1rem;
+    }
+
+    .service-card {
+        padding: 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+/* desktop */
+@media (min-width: 1025px) {
+    .service-card:nth-child(7) {
+        grid-column: 2/3;
+    }
+}
