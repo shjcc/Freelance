@@ -116,7 +116,7 @@ body {
     color: var(--color-green);
     text-transform: uppercase;
     text-align: center;
-    opacity: .87;
+    opacity: 0.87;
 }
 
 .about-header {
@@ -144,7 +144,6 @@ body {
     border-radius: 50%;
     line-height: 2.5;
     opacity: 0.87;
-
 }
 
 .about-item>h3 {
