@@ -79,9 +79,8 @@ body {
 .about-item { 
     grid-row: 3; 
     padding: 2rem;
-    background: #d4d0db;
-    border-radius: 10px;
-
+    background: #e3dfea;
+    border-radius: 1rem;
 }
 
 .about-main>h4 {
@@ -121,7 +120,7 @@ body {
 }
 
 .about-header {
-    padding: 2rem;
+    padding: 1rem 2rem;
 }
 
 .about-header>p {
