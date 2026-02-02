@@ -1,5 +1,4 @@
 .services-body {
-    background-color: #dfe9f3;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23eef2f7' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
 
@@ -31,7 +30,7 @@
     font-family: var(--font-primary);
     font-size: 1.5rem;
     text-align: center;
-    margin-bottom: 3.75rem;
+    margin-bottom: 4rem;
     color: var(--color-black);
     opacity: 0;
     visibility: hidden;
@@ -52,8 +51,7 @@
 }
 
 .service-card {
-    background: rgba(255, 255, 255, 0.7);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: rgba(255, 255, 255, 0.4);
     border: 1px solid rgba(255, 255, 255, 0.25);
     border-radius: 1rem;
     padding: 1.8rem;
@@ -63,7 +61,7 @@
     visibility: hidden;
     animation: fadeIn 1s ease-in-out forwards;
     transition: all .2s ease-in-out;
-    animation-delay: 1.5s;
+    /* animation-delay: 1.5s; */
 }
 
 .service-card:hover {
